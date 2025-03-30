@@ -1,0 +1,102 @@
+
+.navbar-um {
+    background-color: var(--cor-secundaria) !important;
+    height: 30px !important;
+} 
+
+
+.navbar-dois {
+    width: 100%;
+    background-color: var(--cor-terciaria) !important;
+    height: 50px !important;
+    color: var(--cor-secundaria) !important;
+}
+
+    .div-call-us {
+        width: 100vw;
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .div-dois {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        list-style: none;
+    }
+
+    .div-dropdown-flag {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .div-dropdown-flag button {
+        background-color: var(--cor-terciaria);
+        border-color: var(--cor-terciaria);
+        color: var(--cor-fonte-secundaria);
+    }
+
+    .div-dropdown-flag button:hover {
+        background-color: var(--cor-terciaria);
+        border-color: var(--cor-terciaria);
+        color: var(--cor-fonte-secundaria);
+    }
+
+    .div-dropdown-flag img{
+        width: 10%;
+        height: 10%;
+    }
+
+.container-fluid {
+    width: 70% !important;
+}
+
+    .navbar-nav {
+        display: flex !important;
+        justify-content: end;
+        align-items: end !important;
+        width: 70% !important; 
+    }
+
+    .btn-get-appointment {
+        background-color: var(--cor-primaria) !important;
+        border-color: var(--cor-primaria) !important;
+        color: var(--cor-fonte-secundaria) !important;
+    }
+
+    .btn-get-appointment:hover {
+        background-color: var(--cor-terciaria) !important;
+        border-color: var(--cor-terciaria) !important;
+    }
+
+    .navbar-nav{
+        position: relative;
+    }
+
+    .nav-item a{
+        color: var(--cor-fonte-primaria) !important;
+        font-size: var(--tamanho-fonte-menor) !important;
+    }
+
+    .nav-link:hover {
+        color: var(--cor-primaria) !important;
+    }
+
+    .d-flex a {
+        text-decoration: none;
+    }
+
+    .dropdown-menu {
+        background-color: var(--cor-primaria) !important;
+        color: var(--cor-fonte-secundaria) !important;
+    }
+
+    .dropdown-menu a {
+        color: var(--cor-fonte-secundaria) !important;
+    }
+
+    .dropdown-item:hover {
+        background-color: var(--cor-terciaria) !important;
+        color: var(--cor-fonte-secundaria) !important;
+    }

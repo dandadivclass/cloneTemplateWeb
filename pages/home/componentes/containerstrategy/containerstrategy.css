@@ -1,0 +1,56 @@
+
+.div-container-strategy-e-imagem-principal {
+    width: 100%;
+    margin-top: 150px; 
+    height: 88vh;
+    padding: 10px;
+}
+
+    .div-container-strategy-e-imagem-secundaria {
+        background-color: var(--cor-secundaria);
+        height: 75vh; 
+        width: 85%; 
+        padding-left: 70px !important;
+        box-shadow: 10px 10px 15px #d5d5d5 !important;
+    }
+
+    .div-textos-e-contadores-strategy {
+        width: 37%;
+        padding: 10px;
+    }
+        .div-textos-e-contadores-strategy p{
+            font-family: var(--fonte-secundaria);
+            color: var(--quarta-cor);
+            width: 88% !important;
+        }
+        .div-textos-e-contadores-strategy h3 {
+            font-size: 54px !important;
+        }
+        .div-texto-porcentagem {
+            width: 95%;
+        }
+
+    .div-imagem-strategy {
+        width: 46% !important;
+        height: 90% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-imagem-strategy img {
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+    .rounded-divisor {
+        border-top: 8px solid #bbb;
+        border-radius: 5px;
+      
+    }
+
+
+.container-strategy {
+    background-color: var(--cor-secundaria);
+}
+ 

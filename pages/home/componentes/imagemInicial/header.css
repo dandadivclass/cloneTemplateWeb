@@ -1,0 +1,57 @@
+
+.div-inicio-modern-tech {
+    height: 81.1% !important;
+    width: 100% !important;
+    background-image: url(/assets/firstImage.jpg) !important;
+    /* background-image: linear-gradient(to bottom right, red, blue) !important; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    height: 100vh;
+    min-height: 500px;
+    max-height: 1200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-about-company {
+    height: 89%;
+} 
+
+.optimized-it{
+    font-size: 20px !important;
+    color: var(--cor-fonte-secundaria);
+    font-family: var(--fonte);
+    font-weight: 500;
+}
+
+    .digital-experience {
+        font-size: 80px !important;
+        color: var(--cor-fonte-secundaria);
+        font-family: var(--fonte);
+        font-weight: 900;
+    }
+
+    .modern-tech{
+        font-size: 80px !important;
+        color: var(--cor-fonte-secundaria);
+        font-family: var(--fonte);
+        font-weight: bolder;
+    }
+
+    .div-about-company {
+        font-family: var(--fonte);
+    }
+
+    .div-about-company img{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center; 
+    }
+
+
+    .fw-medium {
+        color: var(--quarta-cor);
+    }

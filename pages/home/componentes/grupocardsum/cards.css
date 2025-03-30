@@ -1,0 +1,74 @@
+
+.div-4-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+    .div-4-cards-container{
+        width: var(--size-390);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card-1 {
+        background-color: var(--cor-cards);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 45px;
+        width: 90%;
+        height: 80%;
+        font-family: var(--fonte);
+    }
+
+    .card-1:hover {
+        background-color: var(--cor-secundaria) !important;
+        box-shadow: 3px 5px 8px 5px #eaeaea;
+        transform: scale(1.1);
+    } 
+
+
+.card-icone i {
+    font-size: 38px;
+    transition: 0.3s ease-in-out;
+}
+    .card-icone {
+        background-color: var(--cor-secundaria);
+        width: 83px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .card-icone-hover:hover {
+            background-color: var(--cor-primaria) !important;
+            transition: 0.3s ease-in-out;
+        }
+
+    .card-icone i {
+        font-size: 40px;
+    }
+        .card-icone-i-hover:hover {
+            color: var(--cor-secundaria) !important;
+        }
+
+    .main-title-card, .numero-card {
+        color: black;
+        font-weight: bolder;
+        text-align: center;
+        font-size: 18px;
+    } 
+
+    .lorem {
+        color: #5c727d;
+        font-weight: 500;
+        width: 222px;
+    }

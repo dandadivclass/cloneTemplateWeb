@@ -1,0 +1,14 @@
+:root {
+    /* do 0 até 574 é 95% */
+    --size-mobile: 95%;
+
+    /* do 0 até 390 é 360px */
+    --size-390: 360px;
+    
+    /* a partir do 575 é 540px */
+    --size-px--575: 540px;
+    --size-px--768: 720px;
+    --size-px--992: 960px;
+    --size-px--1200: 1140px;
+    --size-px--1400: 1320px;
+}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body> 
+    <!-- branco -->
+    <div class="navbar bg-body-tertiary d-none d-lg-block">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1"></span>
+      </div>
+    </div>
+
+    <!-- azul com icones -->
+    <nav class="navbar navbar-dois d-none d-lg-block">
+        <div class="container-fluid div-call-us">
+            <div class="container-fluid div-um w-75">
+                <!-- <span class="navbar-brand mb-0 h1"></span> -->
+                <p class="fw-medium mb-0 fw-semibold">Call Us: +1 800 123 456 789 - Mail Us: info@example.com</p>
+            </div>
+
+            <div class="container-sm div-dois w-25 d-flex">
+              <i class="fa-brands fa-facebook" style="color: #fff;"></i>
+              <i class="fa-brands fa-behance" style="color: #fff;"></i>
+              <i class="fa-brands fa-youtube" style="color: #fff;"></i>
+              <i class="fa-brands fa-linkedin" style="color: #fff;"></i>
+                <div class="container-fluid div-dropdown-flag"> 
+                <img src="./assets/flag.png" alt="bandeira dos estados unidos">
+    
+                <li class="nav-item dropdown">
+                    <button class="btn btn-dropdown btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      EN
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-light">
+                      <li><a class="dropdown-item" href="#">PT</a></li>
+                      <li><a class="dropdown-item" href="#">SP</a></li>
+                      <li><a class="dropdown-item" href="#">AR</a></li>
+                    </ul>
+                </li>
+                
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- principal -->
+    
+    <nav class="navbar div-nav-principal navbar-expand-lg">
+        <div class="container-sm mt-lg-3 mb-lg-3">
+
+          <img class="imagem" src="./assets/main-logo.png" alt="logo iplot">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-5 mb-2 mb-lg-0 fw-bolder">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">SERVICES</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link disabled">BLOG</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link disabled">ABOUT US</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link disabled">CONTACT US</a>
+              </li>
+
+            </ul>
+
+            <form class="d-flex" role="search">
+              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+              <button class="btn btn-get-appointment rounded-0 fw-bolder p-3 d-none d-lg-block" type="submit">GET APPOINTMENT</button>
+            </form>
+
+          </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid div-inicio-modern-tech p-0 m-0 w-100 d-flex flex-column justify-content-center">
+        
+      <div class="container-fluid div-inicio-textos text-center">
+            <p class="optimized-it">OPTIMIZED IT SYSTEM </p>
+            <h1 class="modern-tech">Modern Tech Service &</h1>
+            <p class="digital-experience">Digital Experience</p>
+        </div>
+
+        <div class="container-fluid div-inicio-botoes d-flex align-items-center justify-content-around justify-content-sm-center me-5 ms-5 gap-4">
+          <button type="button" class="btn btn-primary rounded-0 btn-get-appointment">Free Consultation</button>
+          <div class="d-none d-md-flex align-items-center gap-4">
+              <a href="#"><i class="fa-solid fa-play" style="color: #ffffff;"></i></a>
+              <p class="mb-0">WATCH VIDEO</p>
+          </div>
+      </div>
+
+    </div>
+
+    
+    <!-- segunda parte -->
+
+    <div class="div-about-company container d-flex flex-column justify-content-center align-items-center flex-sm-row flex-md-row justify-content-sm-center gap-5 mt-5 mr-5 p-5">
+      <div class="container-sm">
+        <img src="./assets/segunda-imagem.png" alt="mulher e homem em uma cafeteria trabalhando com seus notebooks" class="img-fluid">
+      </div>
+
+      <div>
+
+        <div class="flex-grow-1">
+          <p class="fs-6 mb-2 fw-bold text-danger">// ABOUT COMPANY</p>
+          <h3 class="fs-2 mb-3 fw-bold">Team of experience<br>It Specialties</h3>
+          <p class="fs-6 mb-0 fw-medium">Over 39,000 people work for us in more than 70 countries all This breadth of global coverage, combined with specialist</p>
+        </div>
+  
+        <div class="container-xs d-flex flex-column">
+
+          <div class="container-sm d-flex gap-4 m-2 p-0">
+            <i class="fa-solid fa-play mt-2" style="color: #d00a2b;"></i>
+            <p class="fs-5 fw-bold m-0">Cloud Based Services Free Spaces</p>
+          </div>
+
+          <p class="fw-medium ps-5 m-0">When our team provides design and digital marketing. Applied arts can include industrial design, graphic</p>
+        
+          <div class="container-sm d-flex gap-4 m-2 p-0">
+            <i class="fa-solid fa-play mt-2" style="color: #d00a2b;"></i>
+            <p class="fs-5 fw-bold m-0">Responsive & Mobile Friendly Design</p>
+          </div>
+          
+          <p class="fw-medium ps-5 m-0">When our team provides design and digital marketing. Applied arts can include industrial design, graphic</p>
+        
+        </div>
+
+      </div>
+    </div>
+
+    
+    <!-- terceira parte -->
+
+    <section class="section-recent-projects bg-body-tertiary p-5 container-xs d-flex flex-column justify-content-sm-center justify-content-center align-items-center h-100">
+      
+      <div class="container-xs div-carrossel-textos">
+        <p class="fs-6 mb-2 fw-bold text-danger text-center">// WHAT WE DO</p>
+        <h3 class="fs-2 p-0 fw-bolder">Our recent projects</h3>
+      </div>
+
+      <!-- aqui estou utilizando a biblioteca swiper -->
+       
+      <div class="container-xs div-carrossel justify-content-sm-center justify-content-center align-items-center m-0 pt-3 pb-3 h-75">
+        
+        <!-- Slider main container -->
+        <div class="swiper h-75">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            
+            <!-- 
+            <div class="swiper-slide">
+ 
+            </div>  
+            -->
+
+
+            <!-- <div class="swiper-slide">
+              <div class="d-flex flex-column h-100 p-4 border-0" style="min-width: 300px;">
+                <img src="./assets/imagem-um-carrossel.jpg" class="img-fluid" alt="">
+                <h5 class="fs-5 fw-bold pt-3">Backup & Recovery</h5>
+                <p class="flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore</p>
+                <a href="#" class="text-danger text-decoration-none align-self-start">Learn more</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="d-flex flex-column h-100 p-4 border-0" style="min-width: 300px;">
+                <img src="./assets/imagem-dois-carrossel.jpg" class="img-fluid w-100" alt="">
+                <h5 class="fs-5 fw-bold pt-3">Backup & Recovery</h5>
+                <p class="flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore</p>
+                <a href="#" class="text-danger text-decoration-none align-self-start">Learn more</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="d-flex flex-column h-100 p-4 border-0" style="min-width: 300px;">
+                <img src="./assets/imagem-tres-carrossel.jpg" class="img-fluid w-100" alt="">
+                <h5 class="fs-5 fw-bold pt-3">Backup & Recovery</h5>
+                <p class="flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore</p>
+                <a href="#" class="text-danger text-decoration-none align-self-start">Learn more</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="d-flex flex-column h-100 p-4 border-0" style="min-width: 300px;">
+                <img src="./assets/imagem-quatro-carrossel.jpg" class="img-fluid w-100" alt="">
+                <h5 class="fs-5 fw-bold pt-3">Backup & Recovery</h5>
+                <p class="flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore</p>
+                <a href="#" class="text-danger text-decoration-none align-self-start">Learn more</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="d-flex flex-column h-100 p-4 border-0" style="min-width: 300px;">
+                <img src="./assets/imagem-dois-carrossel.jpg" class="img-fluid w-100" alt="">
+                <h5 class="fs-5 fw-bold pt-3">Backup & Recovery</h5>
+                <p class="flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore</p>
+                <a href="#" class="text-danger text-decoration-none align-self-start">Learn more</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="d-flex flex-column h-100 p-4 border-0" style="min-width: 300px;">
+                <img src="./assets/imagem-um-carrossel.jpg" class="img-fluid w-100" alt="">
+                <h5 class="fs-5 fw-bold pt-3">Backup & Recovery</h5>
+                <p class="flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore</p>
+                <a href="#" class="text-danger text-decoration-none align-self-start">Learn more</a>
+              </div>
+            </div>
+
+          </div> -->
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+        
+      </div>
+
+    </section>
+
+
+    <!-- quarta parte -->
+
+    <section class="mt-5 container-sm h-75">
+      <div class="div-video h-100">
+        <div class="div-botao-animado">
+          <a data-autoplay="true" href="https://youtu.be/y0sF5xhGreA?feature=shared"><i class="fa-solid fa-play mt-2" style="color: #d00a2b;"></i></a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- quinta parte -->
+
+    <div class="div-4-cards">
+      
+      <!-- os cards foram criados via javascript -->
+      <div class="div-4-cards-container h-100"></div>
+
+    </div>
+
+
+
+    <!-- sexta parte  -->
+<!-- 
+    <div class="div-container-strategy-e-imagem-principal bg-body-tertiary d-flex align-items-center justify-content-end">
+
+      <div class="div-container-strategy-e-imagem-secundaria col-12 col-md-6 d-flex flex-row justify-content-start align-items-center">
+        <div class="div-textos-e-contadores-strategy d-flex flex-column gap-4">
+          <div class="strategy-textos d-flex flex-column gap-2">
+            <p class="fs-6 mb-2 fw-bolder text-danger">// OUR SKILLS</p>
+            <h3 class="fw-bolder">Strategy Is The Heart<br> Of What We Do</h3>
+            <p class="paragrafo lh-base">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology</p>
+          </div>
+
+          <div class="div-texto-porcentagem"> </div>
+        </div>
+
+        <div class="div-imagem-strategy">
+          <div>
+            <img class="img-fluid h-75 w-75" src="./assets/skill.jpg" alt="três pessoas trabalhando em um projeto de engenharia">
+          </div>
+        </div>
+      </div>
+
+    </div> -->
+
+
+    <div class="div-container-strategy-e-imagem-principal bg-body-tertiary d-flex align-items-center justify-content-center p-4">
+  
+      <div class="container">
+        <div class="row align-items-center">
+    
+          <div class="col-12 col-md-6 d-flex flex-column gap-4 text-center text-md-start">
+            <div class="strategy-textos d-flex flex-column gap-2">
+              <p class="fs-6 mb-2 fw-bolder text-danger">// OUR SKILLS</p>
+              <h3 class="fw-bolder">Strategy Is The Heart<br> Of What We Do</h3>
+              <p class="paragrafo lh-base">
+                Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.
+                Override the digital divide with additional clickthroughs from DevOps. Nanotechnology
+              </p>
+            </div>
+            <div class="div-texto-porcentagem"> </div>
+          </div>
+    
+          <div class="col-12 col-md-6 text-center">
+            <img class="img-fluid w-100 h-auto" src="./assets/skill.jpg" alt="três pessoas trabalhando em um projeto de engenharia">
+          </div>
+    
+        </div>
+      </div>
+    
+    </div>
+
+ 
+
+    <!-- setima parte -->
+
+    <div class="container-principal-working-process h-100 d-flex flex-column justify-content-start align-items-center pt-5">
+      <div class="container-secundario-working-process d-flex flex-column justify-content-evenly w-75">
+        <div class="d-flex flex-column flex-md-row justify-content-around align-items-md-center text-md-start">
+          <div class="working-process-titles p-2">
+            <p class="fs-6 mb-2 fw-bolder text-danger">// WORKING PROCESS</p>
+            <p class="title-maior fw-bolder">Our Working Process<br>For Client Work</p>
+          </div>
+          <div class="d-flex flex-column flex-md-row justify-content-md-around gap-md-5 p-2">
+            <p class="succeeded-project-p fw-bolder">365 +<br><span>Succeeded Projects</span></p>
+            <p class="hours-spent-p fw-bolder">3245 +<br><span>Working Hours Were Spent</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- cards feitos com JS -->
+
+      <div class="working-process-container-cards d-flex flex-column flex-sm-row justify-content-center align-items-center">
+
+      </div> 
+
+    </div>
+    
+
+
+    <!-- oitava parte -->
+
+
+
+  
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

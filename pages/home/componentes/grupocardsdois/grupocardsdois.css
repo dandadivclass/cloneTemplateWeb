@@ -1,0 +1,80 @@
+
+.container-secundario-working-process {
+    font-family: var(--fonte);
+}
+
+    .succeeded-project-p, .hours-spent-p  {
+        font-size: 48px;
+    }
+    .succeeded-project-p span, .hours-spent-p span {
+        font-size: 22px;
+        color: #5c727d;
+        font-weight: 500;
+    }
+
+    .title-maior {
+        font-size: 53px !important;
+    }
+
+.working-process-container-card{
+    box-shadow: 2px 2px 10px 5px #efefef !important;
+    z-index: 0;
+    position: relative;
+    height: 193px;
+}
+
+    .working-process-card p {
+        font-size: 25px !important;
+    }
+
+    .working-process-card-icone {
+        width: 70px;
+        height: 70px;
+        border-radius: 100px;
+        background-color: #ffeaee;
+    }
+        .working-process-card-icone i {
+            font-size: 30px;
+        }
+    
+    .working-process-link {
+        box-shadow: 2px 2px 10px 5px #efefef !important;
+        background-color: var(--cor-secundaria);
+        width: 40px;
+        height: 40px !important;
+        border-radius: 100px;
+        position: absolute;
+        top: 90%;
+        left: 50%;  
+        transform: translateX(-50%);  
+        z-index: 10
+    }
+
+
+
+
+
+
+@media (min-width: 1200px) {
+
+    .container-secundario-working-process {
+        flex-direction: row;
+    }
+
+    .working-process-container-cards {
+        gap: 3rem;
+    }
+}
+
+
+@media (max-width: 414px) {
+
+    .title-maior {
+        font-size: 20px !important;
+    }
+
+    .succeeded-project-p, .hours-spent-p  {
+        font-size: 50px;
+    }
+ 
+}

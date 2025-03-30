@@ -1,0 +1,22 @@
+
+.div-video {
+    background-image: url(/assets/imagem-fundo-video.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 20px !important;
+}
+
+    .div-botao-animado {
+        background-color: var(--cor-fonte-secundaria);
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
