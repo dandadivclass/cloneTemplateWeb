@@ -2,8 +2,7 @@
 .div-inicio-modern-tech {
     height: 81.1% !important;
     width: 100% !important;
-    background-image: url(/assets/firstImage.jpg) !important;
-    /* background-image: linear-gradient(to bottom right, red, blue) !important; */
+    background: linear-gradient(to left, rgba(4, 40, 83, 0) 0, #032650 100%), linear-gradient(to left, rgba(5, 52, 110, 0) 0, #073874 100%), transparent url(/assets/firstImage.jpg) !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
@@ -19,6 +18,22 @@
 .div-about-company {
     height: 89%;
 } 
+
+
+.icone-modern-tech {
+    background-color: var(--cor-secundaria);
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch-video {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte);
+}
 
 .optimized-it{
     font-size: 20px !important;
@@ -49,9 +64,22 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center; 
+        
     }
 
 
     .fw-medium {
         color: var(--quarta-cor);
     }
+
+@media (min-width: 1200px) {
+
+    .team-of-title {
+        font-size: 50px !important;
+    }
+    
+    .texto-over, .texto-provides {
+        font-size: 18.5px;
+    }
+
+}

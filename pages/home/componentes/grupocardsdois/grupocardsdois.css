@@ -1,6 +1,12 @@
 
+.container-principal-working-process {
+    margin-bottom: 700px;
+    
+}
+
 .container-secundario-working-process {
     font-family: var(--fonte);
+    max-width: 75%;
 }
 
     .succeeded-project-p, .hours-spent-p  {
@@ -21,10 +27,14 @@
     z-index: 0;
     position: relative;
     height: 193px;
+    flex-wrap: wrap; 
+    max-width: 100%;
 }
 
     .working-process-card p {
         font-size: 25px !important;
+        word-wrap: break-word;  
+        white-space: normal;
     }
 
     .working-process-card-icone {
@@ -53,8 +63,6 @@
 
 
 
-
-
 @media (min-width: 1200px) {
 
     .container-secundario-working-process {
@@ -77,4 +85,19 @@
         font-size: 50px;
     }
  
+}
+
+@media (max-width: 768px) {
+    .working-process-container-cards{
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    .title-maior {
+        font-size: 33px !important;
+    }
+
+    .succeeded-project-p, .hours-spent-p  {
+        font-size: 30px;
+    }
 }

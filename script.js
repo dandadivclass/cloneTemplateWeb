@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
     speed: 400,
     spaceBetween: 100,
-    slidesPerView: 4,
+    slidesPerView: 2,
 
     // Optional parameters
     direction: 'horizontal',
@@ -52,6 +52,7 @@ for (let i = 0; i < 3; i++) {
 
 
 
+
 // criando os cards após o video 
 
 const numeracao = ['01', '02', '03', '04'];
@@ -91,6 +92,10 @@ for(let i = 0; i < 4; i++) {
     cardsServicos.appendChild(divCardsServicos);
 }  
 
+
+
+
+
 // criando mais cards 
 
 const iconeSegundoCard = ['fa-solid fa-users-viewfinder', 'fa-solid fa-headphones', 'fa-solid fa-chart-simple', 'fa-solid fa-laptop'];
@@ -127,6 +132,41 @@ for(let i = 0; i < 4; i++) {
 } 
 
 
+
+
+//criando cards blog
+
+const imagemCardBlog = ['./assets/blog3.jpg', './assets/blog2.jpg', './assets/blog.jpg'];
+const spanBlog = ['TECH LOVE', 'VIRTUAL', 'CONFIGURE'];
+const imagemAutorBlog = ['./assets/blog-author3.jpg', './assets/blog-author3.jpg', './assets/blog-author3.jpg'];
+const dataPublicacao = ['June 27, 2024', 'June 27, 2024', 'June 27, 2024'];
+const tituluCardBlog = ['Pure is the most healthy and most nourishing food', 'Pure is the most healthy and most nourishing food', 'Pure is the most healthy and most nourishing food'];
+const loremBlog = ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio pariatur molestias quia quod mollitia illum nostrum o', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio pariatur molestias quia quod mollitia illum nostrum o', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio pariatur molestias quia quod mollitia illum nostrum o'];
+const linkBlog = ['Read More', 'Read More', 'Read More'];
+
+const divPrincipalCardBlog = document.querySelector('.cards-latest-blog-div');
+
+for(let i = 0; i < 3; i++) {
+  const divCardsBlog = document.createElement('div');
+  divCardsBlog.className = ('divCard');
+  divCardsBlog.innerHTML = `
+    <div class="card latest-blog-card border-0" style="width: 18rem;">
+      <div>
+      <img src="${imagemCardBlog[i]}" class="card-img-top" alt="homem e mulher jogando jogo com óculos de realidade virtual">
+      <span>${spanBlog[i]}</span>
+      </div>
+      <div class="card-body border-0">
+        <img src="${imagemAutorBlog[i]}" alt="imagem de um homem">
+        <p class="latest-blog-data">${dataPublicacao[i]}</p>
+        <h5 class="card-title fw-bolder">${tituluCardBlog[i]}</h5>
+        <p class="card-text">${loremBlog[i]}</p>
+        <a href="#" class="text-decoration-none fw-bold">${linkBlog[i]}</a>
+      </div>
+    </div>
+  `
+
+  divPrincipalCardBlog.appendChild(divCardsBlog);
+}
 
 
 

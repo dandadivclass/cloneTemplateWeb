@@ -1,0 +1,90 @@
+.latest-blog-div-principal {
+    margin-bottom: 90px;
+}
+
+.latest-blog-card {
+    box-shadow: 1px 6px 10px #bebebe;
+    font-family: var(--fonte);
+}
+    .latest-blog-data {
+        color: #5c727d;
+    }
+    .card-text {
+        font-family: var(--fonte-secundaria);
+        color: #5b6f7a;
+    }
+    .text-decoration-none {
+        font-family: var(--fonte-secundaria);
+        color: black;
+    }
+
+    .latest-blog-card span {
+        background-color: var(--cor-primaria) !important;
+        width: 90px;
+        height: 24px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 14px;
+        position: absolute;
+        bottom: 58%;
+        left: 5%;
+    }
+
+@media (min-width: 1200px) {
+    .latest-blog-div-principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards-latest-blog-div {
+        display: flex;
+        flex-direction: row !important; 
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .latest-blog-card {
+        width: 25rem !important;
+    }
+        .latest-blog-card span {
+            background-color: var(--cor-primaria) !important;
+            width: 90px;
+            height: 28px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 14px;
+            position: absolute;
+            bottom: 48%;
+            left: 3%;
+        }
+
+}
+
+@media (width: 768px) {
+    .div-4-cards-container {
+        width: var(--size-px--1400) !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+
+    }
+    .latest-blog-card {
+        width: 32rem !important;
+    }
+}
+
+@media (width: 801px){
+    .div-4-cards-container {
+        width: var(--size-px--1400) !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+    }
+    .latest-blog-card {
+        width: 32rem !important;
+    }
+}

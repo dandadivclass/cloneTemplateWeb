@@ -72,3 +72,9 @@
         font-weight: 500;
         width: 222px;
     }
+
+ @media (width: 768px) {
+    .div-4-cards-container {
+        flex-wrap: wrap;
+    }
+}
