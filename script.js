@@ -1,29 +1,65 @@
-const swiper = new Swiper('.swiper', {
-    speed: 400,
-    spaceBetween: 100,
-    slidesPerView: 2,
+// const swiper = new Swiper('.swiper', {
+//     speed: 400,
+//     spaceBetween: 100,
+//     slidesPerView: 2,
 
     // Optional parameters
-    direction: 'horizontal',
+    // direction: 'horizontal',
     // loop: true,
   
     // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets'
-    },
+    // pagination: {
+    //   el: '.swiper-pagination',
+    //   type: 'bullets'
+    // },
   
     // // Navigation arrows
-     navigation: {
-       nextEl: '.swiper-button-next',
-       prevEl: '.swiper-button-prev',
-    },
+    //  navigation: {
+    //    nextEl: '.swiper-button-next',
+    //    prevEl: '.swiper-button-prev',
+    // },
   
     // // And if we need scrollbar
     // scrollbar: {
     //   el: '.swiper-scrollbar',
     // },
-}); 
+// }); 
+
+
+new Swiper('.card-wrapper', {
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  spaceBetween: 20,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+
+    0: {
+      slidesPerView: 1
+    },
+
+    768: {
+      slidesPerView: 2
+    },
+
+    1024: {
+      slidesPerView: 4
+    }
+  }
+});
 
 
 
