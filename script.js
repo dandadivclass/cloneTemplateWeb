@@ -79,12 +79,7 @@ for(let i = 0; i < 4; i++) {
 
     // utilizando função para que os cards mudem de cor 
 
-    divCardsServicos.addEventListener('mouseover', function() {
-      // let cardIcone = divCardsServicos.querySelector('.card-icone');
-      // if (cardIcone) cardIcone.classList.add('card-icone-hover');
-
-      // let icones = divCardsServicos.querySelector('.card-icone i');
-      // if (icones) icones.classList.add('card-icone-i-hover');
+    divCardsServicos.addEventListener('mouseover', function() { 
 
       divCardsServicos.classList.add('card-1:hover');
     });

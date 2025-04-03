@@ -8,23 +8,29 @@
     background-color:  var(--cor-secundaria) !important;
     position: absolute;
     top: 20%;
-    right: 13%;
+    right: 19%;
+    width: 65%;
 }
 
 .navbar-dois {
     background-color: #fff !important;
     background-image: url(/assets/breadcumn.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     height: 490px !important;
     background-position: 90%;
 }
     .icone-div {
         background-color: #d42727;
-        width: 40px;
-        height: 40px;
+        width: 56px;
+        height: 56px;
         border-radius: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 22px;
+        box-shadow: 5px 10px 10px #e7e7e7;
     }
 
     .feel-free-text {
@@ -42,31 +48,67 @@
 
     .contact-nav-texto {
         position: absolute;
-        bottom: 10%;
-        left: 13%;
+        bottom: 16%;
+        left: 16%;
+        color: var(--cor-terciaria) !important;
     }
+        .contact-nav-texto h1 {
+            font-size: 50px !important;
+        }
+        .contact-nav-texto p {
+            font-family: var(--fonte-secundaria);
+            font-size: 17px;
+            color: var(--quarta-cor);
+        }
+
+    .nav-botoes a {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor-primaria);
+    }
+
+    .btn-get-appointment {
+        background-color: var(--cor-terciaria) !important;
+        border-color: var(--cor-terciaria) !important;
+        width: 47%;
+        height: 53px;
+    }
+
 
 .info-company {
     width: 98%;
 }
 
-.form-floating input:focus{
-    border-color: #fff !important;
-}
+    .form-floating input:focus{
+        border-color: #fff !important;
+    }
 
-.form-floating label {
-    font-family: var(--fonte-secundaria);
-}
+    .form-floating label {
+        font-family: var(--fonte-secundaria);
+    }
 
-.btn-form {
-    width: 40%;
-    font-family: var(--fonte-secundaria);
-    font-size: 15px;
-    padding: 10px;
-    border-radius: 0;
-    background-color: var(--cor-terciaria);
-    border-color: var(--cor-terciaria);
-}
+    .btn-form {
+        width: 40%;
+        font-family: var(--fonte-secundaria);
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 0;
+        background-color: var(--cor-terciaria);
+        border-color: var(--cor-terciaria);
+    }
+
+    .form-contato {
+        margin-top: 13px;
+    }
+
+    .form-floating i {
+        color: var(--cor-primaria);
+    }
+
+
 
 @media (min-width: 1200px) {
     .div-form-info {
@@ -83,8 +125,8 @@
     }
 
     .feel-free-text {
-        font-size: 29px;
-        width: 100%;
+        font-size: 49px;
+        width: 60%;
     }
     .div-form {
         display: flex;

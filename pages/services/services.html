@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clone</title>
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="services.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     
     <header>
-                <!-- branco -->
+            <!-- branco -->
         <div class="navbar d-none d-lg-block">
             <div class="container-fluid">
             <span class="navbar-brand mb-0 h1"></span>
             </div>
         </div>
-    
+
         <!-- branca dois com icones -->
         <nav class="navbar navbar-dois d-none d-lg-block">
             <div class="container-fluid div-call-us">
@@ -29,7 +29,7 @@
                     <p class="fw-medium mb-0 fw-semibold">+1 800 123 456 789</p>
                     <p class="fw-medium mb-0 fw-semibold">info@example.com</p>
                 </div>
-    
+
                 <div class="container-sm div-dois w-25 d-flex">
                     <i class="fa-brands fa-facebook" style="color: #0a2c3d;"></i>
                     <i class="fa-brands fa-behance" style="color: #0a2c3d;"></i>
@@ -37,7 +37,7 @@
                     <i class="fa-brands fa-linkedin" style="color: #0a2c3d;"></i>
                     <div class="container-fluid div-dropdown-flag"> 
                     <img src="/assets/flag.png" alt="bandeira dos estados unidos">
-        
+
                     <li class="nav-item dropdown">
                         <button class="btn btn-dropdown btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             EN
@@ -60,62 +60,68 @@
 
             <nav class="navbar div-nav-principal navbar-expand-lg p-2">
                 <div class="container-sm mt-lg-3 mb-lg-3">
-        
+
                     <img class="imagem" src="/assets/main-logo.png" alt="logo iplot">
-        
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-        
+
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav me-5 mb-2 mb-lg-0 fw-bolder">
-        
+
                         <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/index.html">HOME</a>
                         </li>
-        
+
                         <li class="nav-item">
-                        <a class="nav-link" href="/pages/services/services.html">SERVICES</a>
+                        <a href="#" class="nav-link" href="#">SERVICES</a>
                         </li>
                         
                         <li class="nav-item">
-                        <a href="" class="nav-link disabled">BLOG</a>
+                        <a href="#" class="nav-link active">BLOG</a>
                         </li>
-        
+
                         <li class="nav-item">
-                        <a href="" class="nav-link disabled">ABOUT US</a>
+                        <a href="" class="nav-link active">ABOUT US</a>
                         </li>
-        
+
                         <li class="nav-item">
-                        <a href="" class="nav-link disabled">CONTACT US</a>
+                        <a href="/pages/contact/contact.html" class="nav-link active">CONTACT US</a>
                         </li>
-        
+
                     </ul>
-        
+
                     <form class="nav-botoes w-25 d-flex justify-content-center align-items-center gap-3" role="search">
                         <a href="#"><i class="m-0 p-0 fa-solid fa-search" style="color: #ffffff;"></i></a>
                         <button class="btn btn-get-appointment rounded-0 fw-bolder p-3 d-none d-lg-block" type="submit">Contact Us</button>
                     </form>
-        
+
                     </div>
                 </div>
             </nav> 
 
         </nav>
- 
+
+        <!-- principal -->
+
+
+
     </header>
 
+    <div class="container text-center mt-5">
+        <p class="fs-5 mb-2 fw-bold text-danger">// OUR TECH SERVICE</p>
+        <h3 class="fs-2 mb-3 fw-bold team-of-title">Our Recent Projects</h3>
+    </div>
 
-    <div class="div-form-info container d-flex align-items-center flex-column mb-5 gap-5">
-        <div class="info-company d-flex flex-column gap-2">
-            <p class="feel-free-text fw-bolder pt-4 pb-4">Feel free to contact us for any query.</p>
-            <!-- div informacoes criada com JS -->
-        </div>
-        <div class="div-form p-0 pe-3 container d-flex flex-column">
-            <!-- formulario criado com JS -->
+    <div class="container mt-5 mb-5">
+        <div class="div-services row g-4"> 
+            <!-- cards criados com JS -->
         </div>
     </div>
 
+     
+ 
 
 
 
@@ -124,14 +130,14 @@
         <img src="/assets/item_02.png" alt="">
         <img src="/assets/item_02.png" alt="">
     </div>
-  
+    
     <div class="div-principal-footer-azul d-flex flex-column justify-content-center align-items-center pb-5">
         <div class="div-footer-azul-secundaria mt-5 p-0 w-75 d-flex flex-column justify-content-around align-items-start gap-5">
-
+            
             <div class="footer-about-us-div w-25">
             <h3 class="footer-titulo fw-bolder">About Us</h3>
             <p class="footer-textos">We are experienced professionals who understand that It services is changing, and are true partners who care about your future business success.</p>
-
+            
             <div class="div-footer-links d-flex flex-row gap-3">
                 <a href="#"><i class="fa-brands fa-facebook footer-icones" style="color: #acacac;"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter footer-icones" style="color: #acacac;"></i></a>
@@ -154,28 +160,28 @@
             </div>
             
             <div class="footer-help-div">
-            <h3 class="footer-titulo fw-bolder">Help</h3>
-
-            <ul class="p-0 m-0">
-                <li class="footer-textos list-group-item">FAQ</li>
-                <li class="footer-textos list-group-item">Terms & Conditions</li>
-                <li class="footer-textos list-group-item">Reporting</li>
-                <li class="footer-textos list-group-item">Documentation</li>
-                <li class="footer-textos list-group-item">Suport Policy</li>
-                <li class="footer-textos list-group-item">Privacy</li>
-            </ul>
+                <h3 class="footer-titulo fw-bolder">Help</h3>
+                
+                <ul class="p-0 m-0">
+                    <li class="footer-textos list-group-item">FAQ</li>
+                    <li class="footer-textos list-group-item">Terms & Conditions</li>
+                    <li class="footer-textos list-group-item">Reporting</li>
+                    <li class="footer-textos list-group-item">Documentation</li>
+                    <li class="footer-textos list-group-item">Suport Policy</li>
+                    <li class="footer-textos list-group-item">Privacy</li>
+                </ul>
             </div>
-
+            
             <div class="footer-logo-div">
-            <img src="/assets/transparent-logo.png" alt="">
-            <p class="footer-textos">We are experienced professionals who understand that It services is</p>
+                <img src="/assets/transparent-logo.png" alt="">
+                <p class="footer-textos">We are experienced professionals who understand that It services is</p>
             <i class="fa-solid fa-location-dot" style="color: #dfdfdf;"></i> <span class="footer-textos">254 Lillian Blvd, Holbrook</span>
             <input class="mt-2" type="email" name="footeremail" id="footeremail" placeholder="Enter email adress">
-            </div>
+        </div>
 
         </div>
     </div>
-  
+    
 
     <footer class=" footer d-flex flex-column pt-3 pb-3">
         <p class="footer-principal-texto text-center">© Dream-It 2024 All rights reserved.</p>
@@ -184,8 +190,7 @@
             <a href="#">Privacy Policy</a>
         </div>
     </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> 
+    
+    
 </body>
+</html>
