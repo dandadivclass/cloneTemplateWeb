@@ -1,29 +1,65 @@
-const swiper = new Swiper('.swiper', {
-    speed: 400,
-    spaceBetween: 100,
-    slidesPerView: 2,
+// const swiper = new Swiper('.swiper', {
+//     speed: 400,
+//     spaceBetween: 100,
+//     slidesPerView: 2,
 
     // Optional parameters
-    direction: 'horizontal',
+    // direction: 'horizontal',
     // loop: true,
   
     // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets'
-    },
+    // pagination: {
+    //   el: '.swiper-pagination',
+    //   type: 'bullets'
+    // },
   
     // // Navigation arrows
-     navigation: {
-       nextEl: '.swiper-button-next',
-       prevEl: '.swiper-button-prev',
-    },
+    //  navigation: {
+    //    nextEl: '.swiper-button-next',
+    //    prevEl: '.swiper-button-prev',
+    // },
   
     // // And if we need scrollbar
     // scrollbar: {
     //   el: '.swiper-scrollbar',
     // },
-}); 
+// }); 
+
+
+new Swiper('.card-wrapper', {
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  spaceBetween: 20,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+
+    0: {
+      slidesPerView: 1
+    },
+
+    768: {
+      slidesPerView: 2
+    },
+
+    1024: {
+      slidesPerView: 4
+    }
+  }
+});
 
 
 
@@ -79,12 +115,7 @@ for(let i = 0; i < 4; i++) {
 
     // utilizando função para que os cards mudem de cor 
 
-    divCardsServicos.addEventListener('mouseover', function() {
-      // let cardIcone = divCardsServicos.querySelector('.card-icone');
-      // if (cardIcone) cardIcone.classList.add('card-icone-hover');
-
-      // let icones = divCardsServicos.querySelector('.card-icone i');
-      // if (icones) icones.classList.add('card-icone-i-hover');
+    divCardsServicos.addEventListener('mouseover', function() { 
 
       divCardsServicos.classList.add('card-1:hover');
     });
