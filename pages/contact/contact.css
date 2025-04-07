@@ -3,35 +3,19 @@
     margin: 0;
     padding: 0;
 }
-
-.div-nav-principal {
-    background-color:  var(--cor-secundaria) !important;
-    position: absolute;
-    top: 20%;
-    right: 19%;
-    width: 65%;
+ 
+ 
+.icone-div {
+    background-color: #d42727;
+    width: 56px;
+    height: 56px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    box-shadow: 5px 10px 10px #e7e7e7;
 }
-
-.navbar-dois {
-    background-color: #fff !important;
-    background-image: url(/assets/breadcumn.jpg) !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 490px !important;
-    background-position: 90%;
-}
-    .icone-div {
-        background-color: #d42727;
-        width: 56px;
-        height: 56px;
-        border-radius: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 22px;
-        box-shadow: 5px 10px 10px #e7e7e7;
-    }
 
     .feel-free-text {
         font-size: 20px;

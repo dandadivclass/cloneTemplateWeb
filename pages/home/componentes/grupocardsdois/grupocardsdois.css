@@ -65,6 +65,11 @@
 
 @media (min-width: 1200px) {
 
+    .container-principal-working-process {
+        margin-bottom: 0px;
+        
+    }
+
     .container-secundario-working-process {
         flex-direction: row;
     }

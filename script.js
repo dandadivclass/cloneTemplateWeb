@@ -1,31 +1,3 @@
-// const swiper = new Swiper('.swiper', {
-//     speed: 400,
-//     spaceBetween: 100,
-//     slidesPerView: 2,
-
-    // Optional parameters
-    // direction: 'horizontal',
-    // loop: true,
-  
-    // If we need pagination
-    // pagination: {
-    //   el: '.swiper-pagination',
-    //   type: 'bullets'
-    // },
-  
-    // // Navigation arrows
-    //  navigation: {
-    //    nextEl: '.swiper-button-next',
-    //    prevEl: '.swiper-button-prev',
-    // },
-  
-    // // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
-// }); 
-
-
 new Swiper('.card-wrapper', {
   direction: 'horizontal',
   loop: true,
@@ -60,6 +32,70 @@ new Swiper('.card-wrapper', {
     }
   }
 });
+
+//segundo carrossel
+
+new Swiper('.card-workingprocess-wrapper', {
+  direction: 'horizontal',
+  loop: true,
+    autoplay: {
+    delay: 3000,
+  },
+  spaceBetween: 20,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+
+    0: {
+      slidesPerView: 1
+    },
+
+    768: {
+      slidesPerView: 2
+    },
+
+    1024: {
+      slidesPerView: 3
+    }
+  }
+});
+
+//criando os cards do carrossel
+
+const iconeServicesCard = ['fa-solid fa-network-wired', 'fa-solid fa-cloud', 'fa-solid fa-clock', 'fa-solid fa-computer', 'fa-solid fa-mobile-screen-button', 'fa-solid fa-swatchbook'];
+const imagens = ['assets/imagem-um-carrossel.jpg', 'assets/imagem-dois-carrossel.jpg', 'assets/imagem-tres-carrossel.jpg', 'assets/imagem-quatro-carrossel.jpg', 'assets/imagem-dois-carrossel.jpg', 'assets/imagem-tres-carrossel.jpg',]
+const tituloServicesCard = ['Corporate Solutions', 'Cloud Development', 'Call Center Solution', 'Backup & Recovery', 'Android Application', 'UX/UI Design'];
+const loremServicesCard = ['Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur ipsum dolor.'];
+const learnMoreCard = ['Learn More'];
+
+const divRecentProjects = document.querySelector('.card-carrossel-list');
+
+for (let i = 0; i < 6; i++) {
+    const cardProjetos = document.createElement('li');
+    cardProjetos.className = ('card-carrossel-item swiper-slide');
+    cardProjetos.innerHTML = `
+        <div class="card-carrossel-div">
+          <img src="${imagens[i]}" alt="Grupo de pessoas trabalhando no computador" class="card-image">
+          <i class="icones-projeto ${iconeServicesCard[i]}"></i>
+          <p class="carrossel-titulo">${tituloServicesCard[i]}</p>
+          <p class="carrossel-lorem">${loremServicesCard[0]}</p>
+          <a href="#" class="carrossel-link">${learnMoreCard[0]}</a>
+        </div>
+    `;
+
+    divRecentProjects.appendChild(cardProjetos);
+}
+
 
 
 
@@ -199,44 +235,3 @@ for(let i = 0; i < 3; i++) {
   divPrincipalCardBlog.appendChild(divCardsBlog);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const imagensCarrossel = ['./assets/imagem-um-carrossel.jpg', './assets/imagem-dois-carrossel.jpg', './assets/imagem-tres-carrossel.jpg', './assets/imagem-quatro-carrossel.jpg']
-// const nomeServicos = ['Backup & Recovery', 'Corporate Solution', 'Cloud Computing', 'Data Security', 'IT Management'];
-// const descricaoServicos = ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore'];
-// const link = ['Learn more'];
-
-// const cardCarrossel = document.querySelector('.swiper-wrapper');
-
-// for (let i = 0; i < 9; i++) {
-//     const divCards = document.createElement('div');
-//     divCards.className = ('swiper-slide');
-//     divCards.innerHTML = `
-//         <img src="${imagensCarrossel[i]}" class="img-fluid" alt="">
-//         <h5 class="fs-5 fw-bold pt-3">${nomeServicos[i]}</h5>
-//         <p class="flex-grow-1">${descricaoServicos[i]}</p>
-//         <a href="#" class="text-danger text-decoration-none align-self-start">${link[i]}</a>
-              
-//     `;
-
-//     cardCarrossel.appendChild(divCards);
-// }
