@@ -1,0 +1,141 @@
+ 
+* {
+    box-sizing: border-box;
+}
+ 
+
+.texto-um {
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+}
+
+.texto-dois {
+    font-family: var(--fonte-secundaria);
+    font-size: 15px !important;
+}
+
+.link-about {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    width: 110px;
+    height: 40px;
+}
+
+.call-us-div {
+    height: 80% !important;
+    gap: 50px;
+}
+
+    .link-call-us {
+        background-color: var(--cor-primaria);
+        padding: 10px !important;
+        color: var(--cor-secundaria);
+    }
+
+    .call-us-textos {
+        height: 30%;
+    } 
+
+.div-cards-textos {
+    margin-top: 140px !important;
+}
+
+.div-cards-services {
+    margin-bottom: 100px !important;
+}
+
+.div-video-cliente {
+    height: 50%;
+    margin-top: 110px;
+    margin-bottom: 90px;
+}
+    .video-about-us {
+        background-image: url(/assets/video-01.jpg);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .play-video {
+            background-color: var(--cor-primaria);
+            height: 90px;
+            width: 90px;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none !important;
+            font-size: 25px;
+            margin-top: 30px;
+        }
+
+.client-cards-div {
+    margin-top: 90px;
+    width: 30% !important;
+    height: 100% !important;
+}
+
+.button-prev-client, .button-next-client {
+    display: block;
+}
+
+
+@media (min-width: 1300px) {
+    .imagem-div {
+        width: 60% !important;
+    }
+
+    .call-us-textos p {
+        font-size: 20px !important;
+    }
+
+    .call-us-textos h3 {
+        font-size: 38px !important;
+        width: 80% !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-div-textos-imagem {
+        margin-top: 50px;
+        width: 801px;
+    }
+    .texto-um {
+        font-size: 15px;
+    }
+    .texto-dois {
+        font-size: 13px;
+    }
+    .link-about {
+        width: 93px;
+    }
+    
+    .call-us-div {
+        flex-direction: row !important;
+        height: 40% !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .div-about-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px !important;
+        gap: 0px !important;
+        flex-wrap: wrap;
+    }
+
+    .about-div-textos-imagem {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .div-imagem, .moca-e-moco-imagem {
+        width: 400px !important;
+        display: none;
+    }
+}

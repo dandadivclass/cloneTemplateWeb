@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html lang="en">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="about.css">
     <script src="script.js" defer></script>
-</head>
+    </head>
 <body>
     
+
     <header class="header-services">
 
         <div class="navbar d-none d-lg-block">
@@ -96,20 +97,109 @@
             </div>
         </nav>  
 
+        <!-- <div class="image-mobile d-lg-none">
+            <img src="/assets/breadcumn.jpg" alt="Hero image" class="w-100">
+        </div> -->
+
     </header>
 
-    <div class="container text-center mt-5">
+    <div class="div-about-us container-md d-flex flex-column justify-content-center align-items-center flex-sm-row flex-md-row justify-content-sm-center gap-5 mt-5 mb-5 mr-5 p-5">
+        <div class="imagem-div container d-flex justify-content-center align-items-center">
+          <img src="/assets/about-00.jpg" alt="mulher e homem conversando e segurando pastas, em um corredor" class="moca-e-moco-imagem img-fluid">
+        </div>
+  
+        <div class="about-div-textos-imagem container">
+            <div class="flex-grow-1">
+                <p class="fs-6 mb-2 fw-bold text-danger">// ABOUT COMPANY</p>
+                <h3 class="fs-2 mb-3 fw-bold team-of-title">Solutions for Residentials & Industries</h3>
+                <p class="texto-um mb-0 fw-semibold texto-over-about">Over 39,000 people work for us in more than 70 countries all This breadth of global coverage, combined with specialist</p>
+
+                <p class="texto-dois mb-0 mt-3 fw-medium texto-over-about">Over 39,000 people work for us in more than 70 countries all This breadth of global coverage, combined with Over 39,000 people work for us in more than 70 countries all This breadth of global</p>
+            </div>  
+
+          <div class="botao-textos d-flex justify-content-start align-items-center mt-4 gap-4">
+            <a class="link-about text-center rounded-0 p-2 fw-bold" href="#">About Us</a>
+            <div class="d-flex gap-3 justify-content-center align-items-center">
+                <img src="/assets/blog-meta.png" alt="mulher utilizando óculos de realidade virtual">
+                <div>
+                    <p class="texto-tres m-0 p-0 fw-bold">Saima Sultana</p>
+                    <p class="texto-quatro m-0 p-0">Ceo & founder</p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+   
+    
+    <div class="call-us-div mt-5 w-100 bg-body-tertiary d-flex flex-column justify-content-center align-items-center p-5">
+        <div class="call-us-textos d-flex flex-column justify-content-center align-items-start">
+            <p class="fs-6 mb-2 fw-bold text-danger">// Call Us</p>
+            <h3 class="fs-2 mb-4 fw-bold team-of-title">A Company involved in Service Maintenance</h3>
+            <a class="text-decoration-none link-call-us" href="#">Get Appointment</a>
+        </div>
+        <div class="div-segunda-imagem d-flex">
+            <img class="moca-ruiva-imagem img-fluid" src="/assets/call1.png" alt="moça branca de cabelos ruivos segurando um celular e sorrindo">
+        </div>
+    </div>
+
+    <div class="div-cards-textos container text-center">
         <p class="fs-5 mb-2 fw-bold text-danger">// OUR TECH SERVICE</p>
         <h3 class="fs-2 mb-3 fw-bold team-of-title">Our Recent Projects</h3>
     </div>
 
-    <div class="container mt-5 mb-5">
+    <div class="div-card-services container mt-5 mb-5">
         <div class="div-services row g-4"> 
             <!-- cards criados com JS -->
         </div>
     </div>
 
-     
+
+    <div class="div-video-cliente">
+        <div class="video-about-us">
+            <a href="#" class="text-decoration-none"><i class="play-video fa-solid fa-play" style="color: #ffffff;"></i></a>
+        </div>
+    </div>
+ 
+    
+ 
+    <section class="cliente-section py-5 bg-light mt-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <p class="fs-5 mb-2 fw-bold text-danger">// Clients Feedback</p>
+                    <h3 class="fs-2 mb-3 fw-bold team-of-title">What Clients Says</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+
+ 
+                        <div class="carousel-inner">
+                            <!-- criado com JS -->
+                        </div>
+ 
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
  
 
 
@@ -179,9 +269,12 @@
             <a href="#">Privacy Policy</a>
         </div>
     </footer>
-    
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
 
 </body>
 </html>

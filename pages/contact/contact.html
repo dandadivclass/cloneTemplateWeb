@@ -13,96 +13,89 @@
 </head>
 <body>
     
-    <header>
-                <!-- branco -->
+    <header class="header-blog">
+
         <div class="navbar d-none d-lg-block">
             <div class="container-fluid">
             <span class="navbar-brand mb-0 h1"></span>
             </div>
         </div>
-    
-        <!-- branca dois com icones -->
-        <nav class="navbar navbar-dois d-none d-lg-block">
-            <div class="container-fluid div-call-us">
-                <div class="container-fluid div-um w-75 d-flex gap-5">
-                    <!-- <span class="navbar-brand mb-0 h1"></span> -->
-                    <p class="fw-medium mb-0 fw-semibold">+1 800 123 456 789</p>
-                    <p class="fw-medium mb-0 fw-semibold">info@example.com</p>
+
+        <div class="container-fluid div-call-us-blog d-none d-lg-block">
+            <div class="container-fluid div-um w-75 d-flex flex-row gap-5">
+                <p class="fw-medium mb-0 fw-semibold">+1 800 123 456 789</p>
+                <p class="fw-medium mb-0 fw-semibold">info@example.com</p>
+            </div>
+
+            <div class="container-sm div-dois w-25 d-flex">
+                <i class="fa-brands fa-facebook" style="color: #0a2c3d;"></i>
+                <i class="fa-brands fa-behance" style="color: #0a2c3d;"></i>
+                <i class="fa-brands fa-youtube" style="color: #0a2c3d;"></i>
+                <i class="fa-brands fa-linkedin" style="color: #0a2c3d;"></i>
+                <div class="container-fluid div-dropdown-flag"> 
+                <img src="/assets/flag.png" alt="bandeira dos estados unidos">
+
+                <li class="nav-item dropdown">
+                    <button class="btn btn-dropdown btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        EN
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-light">
+                        <li><a class="dropdown-item" href="#">PT</a></li>
+                        <li><a class="dropdown-item" href="#">SP</a></li>
+                        <li><a class="dropdown-item" href="#">AR</a></li>
+                    </ul>
+                </li>
+                
                 </div>
-    
-                <div class="container-sm div-dois w-25 d-flex">
-                    <i class="fa-brands fa-facebook" style="color: #0a2c3d;"></i>
-                    <i class="fa-brands fa-behance" style="color: #0a2c3d;"></i>
-                    <i class="fa-brands fa-youtube" style="color: #0a2c3d;"></i>
-                    <i class="fa-brands fa-linkedin" style="color: #0a2c3d;"></i>
-                    <div class="container-fluid div-dropdown-flag"> 
-                    <img src="/assets/flag.png" alt="bandeira dos estados unidos">
-        
-                    <li class="nav-item dropdown">
-                        <button class="btn btn-dropdown btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            EN
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-light">
-                            <li><a class="dropdown-item" href="#">PT</a></li>
-                            <li><a class="dropdown-item" href="#">SP</a></li>
-                            <li><a class="dropdown-item" href="#">AR</a></li>
-                        </ul>
+            </div>
+        </div>
+
+        <nav class="navbar div-nav-principal-blog navbar-expand-lg p-2">
+            <div class="container-sm mt-lg-3 mb-lg-3">
+
+                <img class="imagem-nav-lg" src="/assets/main-logo.png" alt="logo itplot">
+                <img class="imagem-nav-sm" src="/assets/transparent-logo.png" alt="logo itplot">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-5 mb-2 mb-lg-0 fw-bolder">
+
+                    <li class="nav-item">
+                    <a class="nav-link active" href="/index.html">HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link active" href="/pages/services/services.html">SERVICES</a>
                     </li>
                     
+                    <li class="nav-item">
+                    <a class="nav-link active"  aria-current="page" href="/pages/blog/blog.html">BLOG</a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link active" href="">ABOUT US</a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a href="/pages/contact/contact.html" class="nav-link active">CONTACT US</a>
+                    </li>
+
+                </ul>
+
+                <form class="nav-botoes w-25 d-flex justify-content-center align-items-center gap-3" role="search">
+                    <div class="icone-search d-none d-lg-flex">
+                        <a href="#"><i class="m-0 p-0 fa-solid d-none d-lg-block fa-search" style="color: #ffffff;"></i></a>
                     </div>
+                    <button class="btn btn-contact-us rounded-0 fw-bolder p-3 d-none d-lg-block" type="submit">Contact Us</button>
+                </form>
+
                 </div>
             </div>
+        </nav>  
 
-            <div class="contact-nav-texto">
-                <h1 class="fw-bold">Contact Page</h1>
-                <p>Page > Service Page</p>
-            </div>
-
-            <nav class="navbar div-nav-principal navbar-expand-lg p-2">
-                <div class="container-sm mt-lg-3 mb-lg-3">
-        
-                    <img class="imagem" src="/assets/main-logo.png" alt="logo iplot">
-        
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-        
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav me-5 mb-2 mb-lg-0 fw-bolder">
-        
-                        <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/index.html">HOME</a>
-                        </li>
-        
-                        <li class="nav-item">
-                        <a class="nav-link" href="/pages/services/services.html">SERVICES</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                        <a href="" class="nav-link disabled">BLOG</a>
-                        </li>
-        
-                        <li class="nav-item">
-                        <a href="" class="nav-link disabled">ABOUT US</a>
-                        </li>
-        
-                        <li class="nav-item">
-                        <a href="" class="nav-link disabled">CONTACT US</a>
-                        </li>
-        
-                    </ul>
-        
-                    <form class="nav-botoes w-25 d-flex justify-content-center align-items-center gap-3" role="search">
-                        <a href="#"><i class="m-0 p-0 fa-solid fa-search" style="color: #ffffff;"></i></a>
-                        <button class="btn btn-get-appointment rounded-0 fw-bolder p-3 d-none d-lg-block" type="submit">Contact Us</button>
-                    </form>
-        
-                    </div>
-                </div>
-            </nav> 
-
-        </nav>
- 
     </header>
 
 

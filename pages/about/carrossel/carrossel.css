@@ -1,0 +1,52 @@
+.cliente-section {
+    padding: 80px 0;
+}
+
+.cliente-card {
+    background: white;
+    border: 1.9px solid;
+    border-color: var(--cor-primaria);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+    .cliente-card:hover {
+        background: var(--cor-primaria);
+    }
+        .cliente-card:hover h6{
+            color: var(--cor-secundaria) !important;
+        }
+        .cliente-card:hover p {
+            color: var(--cor-secundaria);
+        }
+        .cliente-card:hover h5 {
+            color: var(--cor-secundaria);
+        } 
+
+    .cliente-nome {
+        font-family: var(--fonte-secundaria) !important;
+        color: var(--quarta-cor);
+    }
+
+    .cliente-profissao {
+        font-family: var(--fonte-secundaria) !important;
+        color: var(--quarta-cor);
+    }
+
+    .carousel-indicators button {
+        width: 12px !important;
+        height: 12px !important;
+        border-radius: 50%;
+        background-color: var(--cor-primaria) !important;
+        border: none;
+    }
+
+    .carousel-indicators .active {
+        background-color: var(--cor-primaria);
+    }
+
+.carousel-control-prev, .carousel-control-next {
+    display: none;
+}
+
