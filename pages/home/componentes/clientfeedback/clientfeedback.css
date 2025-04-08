@@ -1,0 +1,35 @@
+@import url(/variaveis/colors.css);
+
+.client-feedback-div-principal {
+    height: 70%;
+    background-color: #dadada;
+}
+
+.cliente-imagem {
+    width: 100px;
+    height: 10% !important;
+    box-shadow: 10px 10px 10px #e7e6e6;
+}
+
+.client-feedback-p {
+    padding-top: 10px !important;
+
+    font-family: var(--fonte-secundaria);
+    color: var(--quarta-cor);
+    font-size: 17px;
+    width: 25px;
+}
+
+.client-says {
+    font-size: 25px !important;
+}
+
+@media (min-width: 1200px) {
+    .client-says {
+        font-size: 39px !important;
+    }
+
+    .client-feedback-p {
+        font-size: 21px;
+    }
+}

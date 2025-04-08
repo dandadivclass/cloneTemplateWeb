@@ -59,13 +59,13 @@
         width: 70% !important; 
     }
 
-    .btn-get-appointment {
+    .btn-get-appointment-home {
         background-color: var(--cor-primaria) !important;
         border-color: var(--cor-primaria) !important;
         color: var(--cor-fonte-secundaria) !important;
     }
 
-    .btn-get-appointment:hover {
+    .btn-get-appointment-home:hover {
         background-color: var(--cor-terciaria) !important;
         border-color: var(--cor-terciaria) !important;
     }

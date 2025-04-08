@@ -72,3 +72,27 @@
         font-weight: 500;
         width: 222px;
     }
+
+@media (width: 768px) {
+    .div-4-cards-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1199px) {
+    .card-1 {
+        width: 190% !important;
+    }
+
+    .latest-blog-card {
+        width: 33rem !important;
+        margin-left: 95px;
+    }
+
+    .working-process-container-cards {
+        flex-direction: column !important;
+    }
+    .working-process-container-card {
+        width: 30rem !important;
+    }
+}

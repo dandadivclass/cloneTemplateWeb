@@ -1,0 +1,200 @@
+.div-blog-principal {
+    margin-top: 50px !important;
+    padding-bottom: 50px; 
+}
+
+.cards-chamadas-blog, .post-blog  {
+    margin-top: 40px !important;
+}
+    .capa-imagem-blog {
+        width: 90% !important;
+        max-width: 100%;
+    }
+    .imagem-blog {
+        width: 100%;
+        display: block;
+    }
+    .textos-blog {
+        position: relative;
+        bottom: 70px;
+        border-radius: 5px;
+        box-shadow: 5px 10px 10px #0000002d;
+    }    
+        .card-text, a{
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .card-date {
+            font-size: 12px;
+        }
+        .card-blog {
+            box-shadow: 5px 5px 10px #0000002d;
+        }
+
+.card {
+    border: 0px;
+    box-shadow: 3px 10px 10px #0000001e;
+}
+
+        
+.icones-info {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px #0000001f;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    text-align: center;
+    padding-top: 13px !important;
+}
+    .icones-info:hover {
+        background-color: #d00a2b;
+        color: var(--cor-secundaria) !important;
+        transition: 0.5s ease;
+    }
+
+.botao-discover {
+    background-color: #FF0000;
+    color: var(--cor-secundaria);
+}
+    .botao-discover:hover {
+        background-color: #FF0000;
+    }
+
+.card-drop-message {
+    background-color: #f7f7f7;
+}
+    .card-drop-message label {
+        font-size: 15px !important;
+        color: var(--quarta-cor);
+    }
+
+    .botao-send-message {
+        width: 90%;
+        background-color: var(--cor-primaria);
+        margin-left: 17px;
+        color: var(--cor-secundaria);
+    }
+
+.categoria {
+    background-color: #d00a2b1f;
+    color: #d00a2b;
+}
+
+.tags-info {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+    .tags-item {
+        border: 2px solid;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-color: var(--cor-primaria);
+        color: var(--cor-primaria);
+    }
+
+
+@media (min-width: 768px) and (max-width: 990px){
+    .card-blog {
+        width: 34rem !important;
+        height: 11rem !important; 
+    }
+    .card-text, a{
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .card-date {
+        font-size: 16px;
+    }
+    .card-titulo {
+        font-size: 20px;
+    }
+    .cards-info-blog {
+        width: 42rem !important;
+    }
+}
+
+
+
+@media (min-width: 1000px) and (max-width: 1399px){
+    .card-blog {
+        width: 39rem !important;
+        height: 14rem !important; 
+    }
+    .card-text, a{
+        font-size: 17px;
+        width: 80%;
+        margin-bottom: 8px;
+    }
+    .card-date {
+        font-size: 15px;
+    }
+    .card-titulo {
+        font-size: 20px;
+        width: 82%;
+    }
+    .cards-chamadas-blog {
+        margin-left: 120px;
+    }
+    .infos-blog {
+        margin-top: 120px;
+    }
+}
+
+
+
+
+@media (min-width: 1400px) {
+    .div-blog-principal {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cards-chamadas-blog {
+        width: 66%;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+        .capa-imagem-blog {
+            width: 68% !important;
+            max-width: 100%;
+        }
+
+        .textos-blog {
+            position: relative;
+            bottom: 70px;
+            left: 50px;
+        }  
+
+        .card-blog {
+            width: 48rem !important;
+            height: 15rem !important; 
+            padding: 10px;
+        }
+        .card-text, .blog-a{
+            font-size: 17px;
+            margin-bottom: 13px;
+        }
+        .card-date {
+            font-size: 16px;
+        }
+        .card-titulo {
+            font-size: 30px;
+            width: 70%;
+            margin-bottom: 10px;
+        }
+
+    .infos-blog {
+        width: 33%;
+        height: 100%;
+        margin-top: 130px;
+        margin-right: 150px;
+        margin-left: 120px;
+    }
+        .infos-blog .card {
+            width: 25rem !important;
+            padding: 20px;
+        }
+}

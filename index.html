@@ -19,7 +19,7 @@
     </div>
 
     <!-- azul com icones -->
-    <nav class="navbar navbar-dois d-none d-lg-block">
+    <div class="navbar navbar-dois d-none d-lg-block">
         <div class="container-fluid div-call-us">
             <div class="container-fluid div-um w-75">
                 <!-- <span class="navbar-brand mb-0 h1"></span> -->
@@ -49,7 +49,7 @@
             </div>
 
         </div>
-    </nav>
+      </div>
 
     <!-- principal -->
     
@@ -70,55 +70,56 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">SERVICES</a>
+                <a class="nav-link active" href="/pages/services/services.html">SERVICES</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link disabled">BLOG</a>
+                <a class="nav-link active" href="/pages/blog/blog.html">BLOG</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link disabled">ABOUT US</a>
+                <a class="nav-link active" href="/pages/about/about.html">ABOUT US</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link disabled">CONTACT US</a>
+                <a href="/pages/contact/contact.html" class="nav-link active">CONTACT US</a>
               </li>
 
             </ul>
 
             <form class="d-flex" role="search">
               <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-              <button class="btn btn-get-appointment rounded-0 fw-bolder p-3 d-none d-lg-block" type="submit">GET APPOINTMENT</button>
+              <button class="btn btn-get-appointment-home rounded-0 fw-bolder p-3 d-none d-lg-block" type="submit">GET APPOINTMENT</button>
             </form>
 
           </div>
         </div>
     </nav>
 
-
-    <div class="container-fluid div-inicio-modern-tech p-0 m-0 w-100 d-flex flex-column justify-content-center">
-        
-      <div class="container-fluid div-inicio-textos text-center">
-            <p class="optimized-it">OPTIMIZED IT SYSTEM </p>
-            <h1 class="modern-tech">Modern Tech Service &</h1>
-            <p class="digital-experience">Digital Experience</p>
-        </div>
-
-        <div class="container-fluid div-inicio-botoes d-flex align-items-center justify-content-around justify-content-sm-center me-5 ms-5 gap-4">
-          <button type="button" class="btn btn-primary rounded-0 btn-get-appointment">Free Consultation</button>
-          <div class="d-none d-md-flex align-items-center gap-4">
-              <a href="#"><i class="fa-solid fa-play" style="color: #ffffff;"></i></a>
-              <p class="mb-0">WATCH VIDEO</p>
+    <div class="particles-wrapper position-relative" style="height: 100vh; min-height: 500px; max-height: 1200px;">
+      <div id="particles-container"></div>
+      
+      <div class="particles-content position-absolute w-100 h-100 d-flex flex-column justify-content-center">
+          <div class="container-fluid div-inicio-textos text-center">
+              <p class="optimized-it">OPTIMIZED IT SYSTEM</p>
+              <h1 class="modern-tech">Modern Tech Service &</h1>
+              <p class="digital-experience">Digital Experience</p>
+          </div>
+  
+          <div class="div-inicio-botoes d-flex align-items-center justify-content-around justify-content-sm-center me-5 ms-5 gap-4">
+              <button type="button" class="btn btn-primary btn-lg rounded-0 btn-get-appointment-home">Free Consultation</button>
+              <div class="d-none d-md-flex align-items-center gap-4">
+                  <a href="#"><i class="fa-solid fa-play icone-modern-tech" style="color: #b60f0f;"></i></a>
+                  <p class="mb-0 fw-bold watch-video">WATCH VIDEO</p>
+              </div>
           </div>
       </div>
-
     </div>
 
     
     <!-- segunda parte -->
 
-    <div class="div-about-company container d-flex flex-column justify-content-center align-items-center flex-sm-row flex-md-row justify-content-sm-center gap-5 mt-5 mr-5 p-5">
+    <div class="div-about-company container d-flex flex-column justify-content-center align-items-center flex-sm-row flex-md-row justify-content-sm-center gap-5 mt-5 mb-5 mr-5 p-5">
       <div class="container-sm">
         <img src="./assets/segunda-imagem.png" alt="mulher e homem em uma cafeteria trabalhando com seus notebooks" class="img-fluid">
       </div>
@@ -127,25 +128,25 @@
 
         <div class="flex-grow-1">
           <p class="fs-6 mb-2 fw-bold text-danger">// ABOUT COMPANY</p>
-          <h3 class="fs-2 mb-3 fw-bold">Team of experience<br>It Specialties</h3>
-          <p class="fs-6 mb-0 fw-medium">Over 39,000 people work for us in more than 70 countries all This breadth of global coverage, combined with specialist</p>
+          <h3 class="fs-2 mb-3 fw-bold team-of-title">Team of experience<br>It Specialties</h3>
+          <p class="mb-0 fw-medium texto-over">Over 39,000 people work for us in more than 70 countries all This breadth of global coverage, combined with specialist</p>
         </div>
   
         <div class="container-xs d-flex flex-column">
 
-          <div class="container-sm d-flex gap-4 m-2 p-0">
-            <i class="fa-solid fa-play mt-2" style="color: #d00a2b;"></i>
+          <div class="container-sm d-flex d-flex align-items-center gap-4 m-2 p-0">
+            <i class="fa-solid fa-circle-check" style="color: #d00a2b;"></i>
             <p class="fs-5 fw-bold m-0">Cloud Based Services Free Spaces</p>
           </div>
 
-          <p class="fw-medium ps-5 m-0">When our team provides design and digital marketing. Applied arts can include industrial design, graphic</p>
+          <p class="fw-medium ps-5 m-0 texto-provides">When our team provides design and digital marketing. Applied arts can include industrial design, graphic</p>
         
-          <div class="container-sm d-flex gap-4 m-2 p-0">
-            <i class="fa-solid fa-play mt-2" style="color: #d00a2b;"></i>
+          <div class="container-sm d-flex align-items-center gap-4 m-2 p-0">
+            <i class="fa-solid fa-circle-check" style="color: #d00a2b;"></i>
             <p class="fs-5 fw-bold m-0">Responsive & Mobile Friendly Design</p>
           </div>
           
-          <p class="fw-medium ps-5 m-0">When our team provides design and digital marketing. Applied arts can include industrial design, graphic</p>
+          <p class="fw-medium ps-5 m-0 texto-provides">When our team provides design and digital marketing. Applied arts can include industrial design, graphic</p>
         
         </div>
 
@@ -155,97 +156,28 @@
     
     <!-- terceira parte -->
 
-    <section class="section-recent-projects bg-body-tertiary p-5 container-xs d-flex flex-column justify-content-sm-center justify-content-center align-items-center h-100">
+    <section class="section-recent-projects p-5 container-xs d-flex flex-column justify-content-sm-center justify-content-center align-items-center h-100">
       
       <div class="container-xs div-carrossel-textos">
         <p class="fs-6 mb-2 fw-bold text-danger text-center">// WHAT WE DO</p>
         <h3 class="fs-2 p-0 fw-bolder">Our recent projects</h3>
       </div>
 
-      <!-- aqui estou utilizando a biblioteca swiper -->
-       
-      <div class="container-xs div-carrossel justify-content-sm-center justify-content-center align-items-center m-0 pt-3 pb-3 h-75">
-        
-        <!-- Slider main container -->
-        <div class="swiper h-75">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
+      <div class="container swiper">
+        <div class="card-wrapper">
+          <ul class="card-carrossel-list d-flex flex-row swiper-wrapper">
+
+            <!-- criados com JS -->
             
-            <!-- 
-            <div class="swiper-slide">
- 
-            </div>  
-            -->
+          </ul>
 
+          <div class="bullets swiper-pagination"></div>
 
-            <!-- <div class="swiper-slide">
-              <div class="d-flex flex-column h-100 p-4 border-0" style="min-width: 300px;">
-                <img src="./assets/imagem-um-carrossel.jpg" class="img-fluid" alt="">
-                <h5 class="fs-5 fw-bold pt-3">Backup & Recovery</h5>
-                <p class="flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore</p>
-                <a href="#" class="text-danger text-decoration-none align-self-start">Learn more</a>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="d-flex flex-column h-100 p-4 border-0" style="min-width: 300px;">
-                <img src="./assets/imagem-dois-carrossel.jpg" class="img-fluid w-100" alt="">
-                <h5 class="fs-5 fw-bold pt-3">Backup & Recovery</h5>
-                <p class="flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore</p>
-                <a href="#" class="text-danger text-decoration-none align-self-start">Learn more</a>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="d-flex flex-column h-100 p-4 border-0" style="min-width: 300px;">
-                <img src="./assets/imagem-tres-carrossel.jpg" class="img-fluid w-100" alt="">
-                <h5 class="fs-5 fw-bold pt-3">Backup & Recovery</h5>
-                <p class="flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore</p>
-                <a href="#" class="text-danger text-decoration-none align-self-start">Learn more</a>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="d-flex flex-column h-100 p-4 border-0" style="min-width: 300px;">
-                <img src="./assets/imagem-quatro-carrossel.jpg" class="img-fluid w-100" alt="">
-                <h5 class="fs-5 fw-bold pt-3">Backup & Recovery</h5>
-                <p class="flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore</p>
-                <a href="#" class="text-danger text-decoration-none align-self-start">Learn more</a>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="d-flex flex-column h-100 p-4 border-0" style="min-width: 300px;">
-                <img src="./assets/imagem-dois-carrossel.jpg" class="img-fluid w-100" alt="">
-                <h5 class="fs-5 fw-bold pt-3">Backup & Recovery</h5>
-                <p class="flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore</p>
-                <a href="#" class="text-danger text-decoration-none align-self-start">Learn more</a>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="d-flex flex-column h-100 p-4 border-0" style="min-width: 300px;">
-                <img src="./assets/imagem-um-carrossel.jpg" class="img-fluid w-100" alt="">
-                <h5 class="fs-5 fw-bold pt-3">Backup & Recovery</h5>
-                <p class="flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore</p>
-                <a href="#" class="text-danger text-decoration-none align-self-start">Learn more</a>
-              </div>
-            </div>
-
-          </div> -->
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
+          <div class="slide-button swiper-button-prev"></div>
+          <div class="slide-button swiper-button-next"></div>
         </div>
-        
       </div>
+      
 
     </section>
 
@@ -253,7 +185,7 @@
     <!-- quarta parte -->
 
     <section class="mt-5 container-sm h-75">
-      <div class="div-video h-100">
+      <div class="container div-video h-100">
         <div class="div-botao-animado">
           <a data-autoplay="true" href="https://youtu.be/y0sF5xhGreA?feature=shared"><i class="fa-solid fa-play mt-2" style="color: #d00a2b;"></i></a>
         </div>
@@ -269,7 +201,8 @@
       <!-- os cards foram criados via javascript -->
       <div class="div-4-cards-container h-100"></div>
 
-    </div>
+    </div> 
+
 
 
 
@@ -312,7 +245,9 @@
                 Override the digital divide with additional clickthroughs from DevOps. Nanotechnology
               </p>
             </div>
-            <div class="div-texto-porcentagem"> </div>
+            <div class="div-texto-porcentagem"> 
+              <!-- feito com JS -->
+            </div>
           </div>
     
           <div class="col-12 col-md-6 text-center">
@@ -354,12 +289,239 @@
 
     <!-- oitava parte -->
 
-
+      <div class="swiper m-0 p-0">
+        <div class="card-workingprocess-wrapper">
+          <ul class="card-carrossel-workprocess-list d-flex flex-row swiper-wrapper">
+  
+            <li class="swiper-slide">
+              <div class="m-0 p-0 workprocess-div-slide">
+                <img class="m-0 mb-5 imagem-workprocess" src="assets/case1.jpg" alt="">
+                <div class="div-invisivel w-100 m-0">
+                  <div class="div-invisivel-textos">
+                    <h3 class="div-invisivel-titulo m-0 p-0">Data Research Analysis</h3>
+                    <p class="m-0">Cloud Computing</p>
+                  </div>
+                  <div class="div-invisivel-icone d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="m-0 p-0">
+                <img class="mb-5 imagem-workprocess" src="assets/case2.jpg" alt="">
+                <div class="div-invisivel w-100 m-0">
+                  <div class="div-invisivel-textos">
+                    <h3 class="div-invisivel-titulo">AI and More</h3>
+                    <p class="m-0">Cloud Computing</p>
+                  </div>
+                  <div class="div-invisivel-icone d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="m-0 p-0">
+                <img class="mb-5 imagem-workprocess" src="assets/case3.jpg" alt="">
+                <div class="div-invisivel w-100 m-0">
+                  <div class="div-invisivel-textos">
+                    <h3 class="div-invisivel-titulo">IOT Research</h3>
+                    <p class="m-0">Optimization</p>
+                  </div>
+                  <div class="div-invisivel-icone d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="m-0 p-0">
+                <img class="mb-5 imagem-workprocess" src="assets/case1.jpg" alt="">
+                <div class="div-invisivel w-100 m-0">
+                  <div class="div-invisivel-textos">
+                    <h3 class="div-invisivel-titulo">Cloud Computing</h3>
+                    <p class="m-0">Elevated Success</p>
+                  </div>
+                  <div class="div-invisivel-icone d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="m-0 p-0">
+                <img class="mb-5 imagem-workprocess" src="assets/case2.jpg" alt="">
+                <div class="div-invisivel w-100 m-0">
+                  <div class="div-invisivel-textos">
+                    <h3 class="div-invisivel-titulo">Big Data</h3>
+                    <p class="m-0">Now for the future</p>
+                  </div>
+                  <div class="div-invisivel-icone d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="m-0 p-0">
+                <img class="mb-5 imagem-workprocess" src="assets/case3.jpg" alt="">
+                <div class="div-invisivel w-100 m-0">
+                  <div class="div-invisivel-textos">
+                    <h3 class="div-invisivel-titulo">Software Analytics</h3>
+                    <p class="m-0">Best Infrastructure</p>
+                  </div>
+                  <div class="div-invisivel-icone d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+  
+          <div class="bullets swiper-pagination"></div>
+  
+          <div class="slide-button swiper-button-prev next-button"></div>
+          <div class="slide-button swiper-button-next prev-button"></div>
+        </div>
+      </div>
+    
 
   
     
+      
+    <!-- décima parte  -->
 
+    <div class="client-feedback-div-principal mt-5 text-center bg-body-tertiary d-flex flex-column justify-content-center align-items-center">
+      <div class="client-feedback-titles p-4">
+        <p class="fs-6 fs-4 mb-2 fw-bolder text-danger">// Clients Feedback</p>
+        <p class="fw-bolder client-says">What Client Says</p>
+      </div>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade gap-4 w-75">
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active d-flex flex-column gap-4 justify-content-center align-items-center">
+            <img src="./assets/client.jpg" class="cliente-imagem d-block" alt="...">
+            <p class="client-feedback-p w-75">What a load of rubbish bits and bobs pear shaped owt to do
+              with me bubble and squeak jolly good morish tinkety tonk old fruit, car boot my good sir buggered plastered cheeky David,
+              haggle young delinquent say so I said bite your arm off easy peasy </p>
+              <div class="gap-0 ">
+                <p class="fw-bol m-0 p-0 fs-5">MIKE ARMINS</p>
+                <p class="fs-6 fs-4 fw-bolder text-danger">UX/UI</p>
+              </div>
+          </div>
+
+          <div class="carousel-item d-flex flex-column gap-3 justify-content-center align-items-center">
+            <img src="./assets/client.jpg" class="cliente-imagem d-block" alt="...">
+            <p class="client-feedback-p w-75">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. 
+              He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, 
+              slightly domed and divided by arches into stiff sections.</p>
+              <div class="gap-0 ">
+                <p class="fw-bol m-0 p-0 fs-5">LUISE MARIBELL</p>
+                <p class="fs-6 fs-4 fw-bolder text-danger">UX/UI</p>
+              </div>
+          </div>
+
+          <div class="carousel-item d-flex flex-column gap-3 justify-content-center align-items-center">
+            <img src="./assets/client.jpg" class="cliente-imagem d-block" alt="...">
+            <p class="client-feedback-p w-75">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm 
+              of existence in this spot, which was created for the bliss of souls like mine. </p>
+              <div class="gap-0 ">
+                <p class="fw-bol m-0 p-0 fs-5">JOANNE LANER</p>
+                <p class="fs-6 fs-4 fw-bolder text-danger">UX/UI</p>
+              </div>
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+ 
+
+
+    <!-- décima primeira parte -->
+
+    <div class="latest-blogs-titles p-4 text-center mt-5">
+      <p class="fs-6 fs-4 mb-2 fw-bolder text-danger">// NEWS & BLOG</p>
+      <p class="fw-bolder fs-1">Latest Blogs</p>
+    </div>
+    <div class="latest-blog-div-principal">
+
+      <!-- cards criados com JS -->
+
+      <div class="container cards-latest-blog-div m-0 p-0 d-flex flex-column justify-content-center align-items-center gap-5"> </div>
+    </div>
+
+
+
+    <!-- ultima parte -->
+
+    <div class="div-footer-vermelha container d-flex flex-row justify-content-around align-items-center w-100">
+      <img src="./assets/item_02.png" alt="">
+      <img src="./assets/item_02.png" alt="">
+      <img src="./assets/item_02.png" alt="">
+    </div>
+
+    <div class="div-principal-footer-azul d-flex flex-column justify-content-center align-items-center pb-5">
+      <div class="div-footer-azul-secundaria mt-5 p-0 w-75 d-flex flex-column justify-content-around align-items-start gap-5">
+
+        <div class="footer-about-us-div w-25">
+          <h3 class="footer-titulo fw-bolder">About Us</h3>
+          <p class="footer-textos">We are experienced professionals who understand that It services is changing, and are true partners who care about your future business success.</p>
+
+          <div class="div-footer-links d-flex flex-row gap-3">
+            <a href="#"><i class="fa-brands fa-facebook footer-icones" style="color: #acacac;"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter footer-icones" style="color: #acacac;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram footer-icones" style="color: #acacac;"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin footer-icones" style="color: #acacac;"></i></a>
+          </div>
+          
+        </div>
+        <div class="footer-useful-links-div">
+          <ul class="p-0 m-0">
+            <h3 class="footer-titulo fw-bolder">Useful Links</h3>
+
+            <li class="footer-textos list-group-item">About</li>
+            <li class="footer-textos list-group-item">News</li>
+            <li class="footer-textos list-group-item">Partners</li>
+            <li class="footer-textos list-group-item">Room Details</li>
+            <li class="footer-textos list-group-item">Gallery</li>
+            <li class="footer-textos list-group-item">Contacts</li>
+          </ul>
+        </div>
+        
+        <div class="footer-help-div">
+          <h3 class="footer-titulo fw-bolder">Help</h3>
+
+          <ul class="p-0 m-0">
+            <li class="footer-textos list-group-item">FAQ</li>
+            <li class="footer-textos list-group-item">Terms & Conditions</li>
+            <li class="footer-textos list-group-item">Reporting</li>
+            <li class="footer-textos list-group-item">Documentation</li>
+            <li class="footer-textos list-group-item">Suport Policy</li>
+            <li class="footer-textos list-group-item">Privacy</li>
+          </ul>
+        </div>
+
+        <div class="footer-logo-div">
+          <img src="./assets/transparent-logo.png" alt="">
+          <p class="footer-textos">We are experienced professionals who understand that It services is</p>
+          <i class="fa-solid fa-location-dot" style="color: #dfdfdf;"></i> <span class="footer-textos">254 Lillian Blvd, Holbrook</span>
+          <input class="mt-2" type="email" name="footeremail" id="footeremail" placeholder="Enter email adress">
+        </div>
+
+      </div>
+    </div>
+
+
+    <footer class=" footer d-flex flex-column pt-3 pb-3">
+      <p class="footer-principal-texto text-center">© Dream-It 2024 All rights reserved.</p>
+      <div class="footer-principal-links d-flex flex-row justify-content-center align-items-center gap-3 text-decoration-none">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,96 @@
+
+.header-blog {
+    margin-top: 20px;
+    height: 480px;
+    background-image: url(/assets/breadcumn.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}    
+ 
+.div-call-us-blog { 
+    width: 100vw;
+    display: flex !important;
+    flex-direction: row !important;
+}
+ 
+.div-nav-principal-blog { 
+    background-color: var(--cor-secundaria);
+    width: 66%;
+    height: 18%;
+    padding: 7px;
+    position: absolute;
+    top: 22%;
+    left: 15%;
+    z-index: 100;
+}
+
+    .icone-search {
+        background-color: var(--cor-primaria);
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .btn-contact-us {
+        background-color: var(--cor-terciaria);
+        color: var(--cor-secundaria);
+        width: 60%;
+    }
+        .btn-contact-us:hover {
+            background-color: var(--cor-primaria);
+            color: var(--cor-secundaria);
+        }
+
+    .navbar-collapse {
+        background-color: var(--cor-secundaria);
+        border-radius: 5px;
+    } 
+
+@media (max-width: 991.98px) {
+    .header-blog {
+        margin-top: 0;
+        height: auto;
+        padding-top: 70px;  
+    }
+        .div-call-us-blog {
+            display: none !important;
+        }
+        
+        .div-nav-principal-blog {
+            width: 100% !important;
+            height: 110%;
+            top: auto !important;
+            left: auto !important;
+            margin-top: 0 !important;
+            background-color: var(--cor-primaria);
+        }
+        
+
+        .imagem-nav-lg {
+            display: none;
+        }
+}
+
+@media (min-width: 992px) {
+    .imagem-nav-sm {
+        display: none;
+    } 
+}
+
+@media  (min-width: 992px) and (max-width: 1487px)  {
+    .div-nav-principal-blog {
+        width: 90%;
+        position: absolute;
+        top: 22%;
+        left: 6%;
+    }
+
+        .icone-search {
+            width: 36px;
+            height: 36px;
+        }
+}

@@ -1,29 +1,101 @@
-const swiper = new Swiper('.swiper', {
-    speed: 400,
-    spaceBetween: 100,
-    slidesPerView: 4,
+new Swiper('.card-wrapper', {
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  spaceBetween: 20,
 
-    // Optional parameters
-    direction: 'horizontal',
-    // loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets'
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+
+    0: {
+      slidesPerView: 1
     },
-  
-    // // Navigation arrows
-     navigation: {
-       nextEl: '.swiper-button-next',
-       prevEl: '.swiper-button-prev',
+
+    768: {
+      slidesPerView: 2
     },
-  
-    // // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
-}); 
+
+    1024: {
+      slidesPerView: 4
+    }
+  }
+});
+
+//segundo carrossel
+
+new Swiper('.card-workingprocess-wrapper', {
+  direction: 'horizontal',
+  loop: true,
+    autoplay: {
+    delay: 3000,
+  },
+  spaceBetween: 20,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+
+    0: {
+      slidesPerView: 1
+    },
+
+    768: {
+      slidesPerView: 2
+    },
+
+    1024: {
+      slidesPerView: 3
+    }
+  }
+});
+
+//criando os cards do carrossel
+
+const iconeServicesCard = ['fa-solid fa-network-wired', 'fa-solid fa-cloud', 'fa-solid fa-clock', 'fa-solid fa-computer', 'fa-solid fa-mobile-screen-button', 'fa-solid fa-swatchbook'];
+const imagens = ['assets/imagem-um-carrossel.jpg', 'assets/imagem-dois-carrossel.jpg', 'assets/imagem-tres-carrossel.jpg', 'assets/imagem-quatro-carrossel.jpg', 'assets/imagem-dois-carrossel.jpg', 'assets/imagem-tres-carrossel.jpg',]
+const tituloServicesCard = ['Corporate Solutions', 'Cloud Development', 'Call Center Solution', 'Backup & Recovery', 'Android Application', 'UX/UI Design'];
+const loremServicesCard = ['Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur ipsum dolor.'];
+const learnMoreCard = ['Learn More'];
+
+const divRecentProjects = document.querySelector('.card-carrossel-list');
+
+for (let i = 0; i < 6; i++) {
+    const cardProjetos = document.createElement('li');
+    cardProjetos.className = ('card-carrossel-item swiper-slide');
+    cardProjetos.innerHTML = `
+        <div class="card-carrossel-div">
+          <img src="${imagens[i]}" alt="Grupo de pessoas trabalhando no computador" class="card-image">
+          <i class="icones-projeto ${iconeServicesCard[i]}"></i>
+          <p class="carrossel-titulo">${tituloServicesCard[i]}</p>
+          <p class="carrossel-lorem">${loremServicesCard[0]}</p>
+          <a href="#" class="carrossel-link">${learnMoreCard[0]}</a>
+        </div>
+    `;
+
+    divRecentProjects.appendChild(cardProjetos);
+}
+
 
 
 
@@ -49,6 +121,7 @@ for (let i = 0; i < 3; i++) {
 
     divPorcentagem.appendChild(divTextoPorcentagem);
 }
+
 
 
 
@@ -78,18 +151,17 @@ for(let i = 0; i < 4; i++) {
 
     // utilizando função para que os cards mudem de cor 
 
-    divCardsServicos.addEventListener('mouseover', function() {
-      // let cardIcone = divCardsServicos.querySelector('.card-icone');
-      // if (cardIcone) cardIcone.classList.add('card-icone-hover');
-
-      // let icones = divCardsServicos.querySelector('.card-icone i');
-      // if (icones) icones.classList.add('card-icone-i-hover');
+    divCardsServicos.addEventListener('mouseover', function() { 
 
       divCardsServicos.classList.add('card-1:hover');
     });
 
     cardsServicos.appendChild(divCardsServicos);
 }  
+
+
+
+
 
 // criando mais cards 
 
@@ -112,7 +184,7 @@ for(let i = 0; i < 4; i++) {
           <p class="fw-bolder">${tituloSegundoCard[i]}</p>
         </div>
         <div class="working-process-link d-flex justify-content-center align-items-center">
-          <a href="#"><i class="working-process-icone p-0 m-0 ${arrowSegundoCard[i]}" style="color: #d00a2b;"></i></a>
+          <a href="#"><i class="working-arrow-icone p-0 m-0 ${arrowSegundoCard[i]}" style="color: #d00a2b;"></i></a>
         </div>
       </div>
   `;
@@ -129,43 +201,40 @@ for(let i = 0; i < 4; i++) {
 
 
 
+//criando cards blog
+
+const imagemCardBlog = ['./assets/blog3.jpg', './assets/blog2.jpg', './assets/blog.jpg'];
+const spanBlog = ['TECH LOVE', 'VIRTUAL', 'CONFIGURE'];
+const imagemAutorBlog = ['./assets/blog-author3.jpg', './assets/blog-author3.jpg', './assets/blog-author3.jpg'];
+const dataPublicacao = ['June 27, 2024', 'June 27, 2024', 'June 27, 2024'];
+const tituluCardBlog = ['Pure is the most healthy and most nourishing food', 'Pure is the most healthy and most nourishing food', 'Pure is the most healthy and most nourishing food'];
+const loremBlog = ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio pariatur molestias quia quod mollitia illum nostrum o', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio pariatur molestias quia quod mollitia illum nostrum o', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio pariatur molestias quia quod mollitia illum nostrum o'];
+const linkBlog = ['Read More', 'Read More', 'Read More'];
+
+const divPrincipalCardBlog = document.querySelector('.cards-latest-blog-div');
+
+for(let i = 0; i < 3; i++) {
+  const divCardsBlog = document.createElement('div');
+  divCardsBlog.className = ('divCard');
+  divCardsBlog.innerHTML = `
+    <div class="card latest-blog-card border-0" style="width: 18rem;">
+      <div>
+      <img src="${imagemCardBlog[i]}" class="card-img-top" alt="homem e mulher jogando jogo com óculos de realidade virtual">
+      <span>${spanBlog[i]}</span>
+      </div>
+      <div class="card-body border-0">
+        <img src="${imagemAutorBlog[i]}" alt="imagem de um homem">
+        <p class="latest-blog-data">${dataPublicacao[i]}</p>
+        <h5 class="card-title fw-bolder">${tituluCardBlog[i]}</h5>
+        <p class="card-text">${loremBlog[i]}</p>
+        <a href="#" class="text-decoration-none fw-bold">${linkBlog[i]}</a>
+      </div>
+    </div>
+  `
+
+  divPrincipalCardBlog.appendChild(divCardsBlog);
+}
 
 
+particlesJS.load('particles-container', 'particlesjs-config.json');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const imagensCarrossel = ['./assets/imagem-um-carrossel.jpg', './assets/imagem-dois-carrossel.jpg', './assets/imagem-tres-carrossel.jpg', './assets/imagem-quatro-carrossel.jpg']
-// const nomeServicos = ['Backup & Recovery', 'Corporate Solution', 'Cloud Computing', 'Data Security', 'IT Management'];
-// const descricaoServicos = ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore'];
-// const link = ['Learn more'];
-
-// const cardCarrossel = document.querySelector('.swiper-wrapper');
-
-// for (let i = 0; i < 9; i++) {
-//     const divCards = document.createElement('div');
-//     divCards.className = ('swiper-slide');
-//     divCards.innerHTML = `
-//         <img src="${imagensCarrossel[i]}" class="img-fluid" alt="">
-//         <h5 class="fs-5 fw-bold pt-3">${nomeServicos[i]}</h5>
-//         <p class="flex-grow-1">${descricaoServicos[i]}</p>
-//         <a href="#" class="text-danger text-decoration-none align-self-start">${link[i]}</a>
-              
-//     `;
-
-//     cardCarrossel.appendChild(divCards);
-// }

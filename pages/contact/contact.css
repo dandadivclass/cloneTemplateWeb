@@ -1,0 +1,148 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+ 
+ 
+.icone-div {
+    background-color: #d42727;
+    width: 56px;
+    height: 56px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    box-shadow: 5px 10px 10px #e7e7e7;
+}
+
+    .feel-free-text {
+        font-size: 20px;
+    }
+    .office-adress-title {
+        font-family: var(--fonte);
+        font-weight: 600;
+        font-size: 19px;
+    }
+    .office-adress-p {
+        font-family: var(--fonte-secundaria);
+        color: var(--quarta-cor);
+    }
+
+    .contact-nav-texto {
+        position: absolute;
+        bottom: 16%;
+        left: 16%;
+        color: var(--cor-terciaria) !important;
+    }
+        .contact-nav-texto h1 {
+            font-size: 50px !important;
+        }
+        .contact-nav-texto p {
+            font-family: var(--fonte-secundaria);
+            font-size: 17px;
+            color: var(--quarta-cor);
+        }
+
+    .nav-botoes a {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor-primaria);
+    }
+
+    .btn-get-appointment {
+        background-color: var(--cor-terciaria) !important;
+        border-color: var(--cor-terciaria) !important;
+        width: 47%;
+        height: 53px;
+    }
+
+
+.info-company {
+    width: 98%;
+}
+
+    .form-floating input:focus{
+        border-color: #fff !important;
+    }
+
+    .form-floating label {
+        font-family: var(--fonte-secundaria);
+    }
+
+    .btn-form {
+        width: 40%;
+        font-family: var(--fonte-secundaria);
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 0;
+        background-color: var(--cor-terciaria);
+        border-color: var(--cor-terciaria);
+    }
+
+    .form-contato {
+        margin-top: 13px;
+    }
+
+    .form-floating i {
+        color: var(--cor-primaria);
+    }
+
+
+
+@media (min-width: 1200px) {
+    .div-form-info {
+        flex-direction: row !important;
+        display: flex !important;
+        justify-content: space-around !important;
+        align-items: center !important;
+        gap: 5px !important;
+        width: 100% !important;
+    }
+
+    .info-company {
+        gap: 20px !important;
+    }
+
+    .feel-free-text {
+        font-size: 49px;
+        width: 60%;
+    }
+    .div-form {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin-top: 90px;
+    }
+    .form-floating label {
+        font-size: 17px;
+    }
+
+    .btn-form {
+        width: 29%;
+        font-family: var(--fonte-secundaria);
+        font-size: 17px;
+        padding: 10px;
+        border-radius: 0;
+        background-color: var(--cor-terciaria);
+        border-color: var(--cor-terciaria);
+    }
+}
+
+@media (min-width: 2000px) {
+    .div-form-info {
+        height: 70%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .btn-form {
+        width: 30%;
+    }
+    .div-footer-vermelha {
+        top: 5%;
+    }
+}
