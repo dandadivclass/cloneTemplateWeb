@@ -42,6 +42,10 @@
             object-fit: cover !important;
         }
 
+        .imagem-workprocess {
+            width: 90%;
+        }
+
         .icones-projeto {
             color: var(--cor-secundaria);
             font-size: 19px;
@@ -78,6 +82,13 @@
             position: relative;
         }
 
+        .swiper-button-prev {
+            display: none;
+        }
+        .swiper-button-next {
+            display: none;
+        }
+
         .prev-button, .next-button {
             display: none !important;
         }
@@ -86,13 +97,6 @@
             background-color: red;
         }
 
-
-/* segundo carrossel  */
-
-/* .imagem-workprocess:hover {
-    transform: scale(0.5) !important;
-    transition: 1s;
-} */
 
 
 .div-invisivel {
@@ -108,7 +112,7 @@
     transition: all 0.4s ease-in-out;
     display: flex;
     justify-content: space-between;
-    padding: 12px;
+    padding: 4px;
     padding-right: 40px;
 }
     .div-invisivel-textos {
@@ -169,4 +173,17 @@
         transform: translateY(-70px);
     }
         
+}
+
+
+@media (max-width: 500px) {
+    .div-invisivel-titulo {
+        font-size: 17px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .div-invisivel-titulo {
+        font-size: 17px !important;
+    }
 }

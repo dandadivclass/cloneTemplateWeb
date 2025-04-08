@@ -1,23 +1,34 @@
 
-.div-inicio-modern-tech {
-    height: 81.1% !important;
-    width: 100% !important;
-    background: linear-gradient(to left, rgba(4, 40, 83, 0) 0, #032650 100%), linear-gradient(to left, rgba(5, 52, 110, 0) 0, #073874 100%), transparent url(/assets/firstImage.jpg) !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; 
-    height: 100vh;
-    min-height: 500px;
-    max-height: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.particles-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
-.div-about-company {
-    height: 89%;
-} 
+#particles-container {
+    position: absolute;
+    width: 100%;
+    height: 83%;
+    top: 0;
+    left: 0;
+    z-index: 0; 
+    background: linear-gradient(to left, rgba(4, 40, 83, 0) 0, #032650 100%), 
+                linear-gradient(to left, rgba(5, 52, 110, 0) 0, #073874 100%), 
+                transparent url(/assets/firstImage.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
+.particles-content {
+    position: relative;
+    z-index: 0; 
+    color: white;  
+}
+
+.div-inicio-textos {
+    position: relative;
+    z-index: 0;
+}
 
 .icone-modern-tech {
     background-color: var(--cor-secundaria);
@@ -25,10 +36,11 @@
     width: 60px;
     border-radius: 100px;
     display: flex;
+    align-items: center;
     justify-content: center;
     align-items: center;
 }
-
+ 
 .watch-video {
     color: var(--cor-secundaria);
     font-family: var(--fonte);
