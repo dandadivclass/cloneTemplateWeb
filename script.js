@@ -184,7 +184,7 @@ for(let i = 0; i < 4; i++) {
           <p class="fw-bolder">${tituloSegundoCard[i]}</p>
         </div>
         <div class="working-process-link d-flex justify-content-center align-items-center">
-          <a href="#"><i class="working-process-icone p-0 m-0 ${arrowSegundoCard[i]}" style="color: #d00a2b;"></i></a>
+          <a href="#"><i class="working-arrow-icone p-0 m-0 ${arrowSegundoCard[i]}" style="color: #d00a2b;"></i></a>
         </div>
       </div>
   `;
@@ -234,4 +234,7 @@ for(let i = 0; i < 3; i++) {
 
   divPrincipalCardBlog.appendChild(divCardsBlog);
 }
+
+
+particlesJS.load('particles-container', 'particlesjs-config.json');
 

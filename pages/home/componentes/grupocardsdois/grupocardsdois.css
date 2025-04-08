@@ -1,6 +1,5 @@
-
 .container-principal-working-process {
-    margin-bottom: 700px;
+    margin-bottom: 730px;
     
 }
 
@@ -60,14 +59,31 @@
         z-index: 10
     }
 
+    .working-arrow-icone {
+        padding-top: 11px !important;
+    }
+
+    .working-process-container-card:hover {
+        background-color: #f1f5fe;
+    }
+        .working-process-container-card:hover .working-process-card-icone{
+            background-color: var(--cor-terciaria);
+            transition: 0.5s;
+        }
+        .working-process-container-card:hover .working-process-icone {
+            color: var(--cor-secundaria) !important;
+
+        }
+        
+
 
 
 
 @media (min-width: 1200px) {
 
     .container-principal-working-process {
-        margin-bottom: 0px;
-        
+        margin-bottom: 120px;
+        height: 90%;
     }
 
     .container-secundario-working-process {
@@ -75,8 +91,12 @@
     }
 
     .working-process-container-cards {
+        width: 90% !important;
         gap: 3rem;
+        flex-wrap: wrap;
     }
+
+
 }
 
 
@@ -93,6 +113,7 @@
 }
 
 @media (max-width: 768px) {
+
     .working-process-container-cards{
         flex-direction: row !important;
         flex-wrap: wrap;
